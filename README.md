@@ -4,6 +4,16 @@
 
 ## 前提条件
 
+### サーバーデプロイが必要
+
+このサービスはサーバーへのデプロイが必要です。完全な機能を利用するには以下が必要です：
+
+1. クラウドサーバー（AWS EC2等）
+2. ドメインの取得と設定
+3. SSL証明書（セキュリティ上の理由から必要）
+
+ローカル環境では一部機能のテストは行えますが、本番と同等の機能を利用するにはサーバーへのデプロイが必要です。
+
 ### Cloudflare Bot Fight Mode 利用のための設定
 
 Bot Fight Modeを利用するには下記の設定が必要です:
@@ -92,3 +102,17 @@ GOOGLE_CLOUD_PROJECT_ID=your-project-id
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your-site-key
 GOOGLE_API_KEY=your-api-key
 ```
+
+## サーバーデプロイ手順
+
+1. サーバーを用意（AWS EC2、GCP、Azureなど）
+2. Node.jsとnpmをインストール
+3. リポジトリをサーバーにクローン
+4. 必要な環境変数を設定
+5. 依存関係をインストール：`npm install`
+6. アプリケーションをビルド：`npm run build`
+7. 本番モードで起動：`npm start`
+8. プロセスマネージャ（PM2など）を使用してバックグラウンドで実行
+9. 必要に応じてNginxやApacheを設定
+
+サーバーへのデプロイ後、CloudflareやreCAPTCHA Enterpriseの設定を行います。
