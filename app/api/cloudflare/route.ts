@@ -25,6 +25,13 @@ export async function GET(request: NextRequest) {
     // デバッグ用にすべてのヘッダーを出力
     console.log('Request headers:', Object.fromEntries(request.headers));
     
+    // Cloudflare関連ヘッダーを確認
+    console.log('Cloudflare Bot Score Header:', cfBotScore);
+    console.log('Cloudflare Bot Tags Header:', cfBotTags);
+    console.log('Cloudflare Threat Score:', cfThreatScore);
+    console.log('Cloudflare WAF Header:', cfWaf);
+    console.log('Cloudflare Ray ID:', cfRay);
+    
     // User-Agentベースの簡易ボット検知
     const botPatterns = [
       /bot/i, /crawler/i, /spider/i, /scraper/i,
@@ -102,23 +109,15 @@ export async function GET(request: NextRequest) {
       botTags.push('user-agent-bot');
     }
     
-    // JavaScript detectionsの結果をスコア調整に利用
+    // JavaScript detectionsの結果をタグとして記録するだけで、スコアは調整しない
     if (jsDetectionPassed === false) {
-      // JavaScript検証に失敗した場合は、より厳しくスコアを調整
-      if (botScore === null || botScore > 0.3) {
-        botScore = 0.3; // 検証失敗したらボットの可能性を高めに設定
-      }
-      botTags.push('js_detection_adjusted_score');
-    } else if (jsDetectionPassed === true && botScore === null) {
-      // JavaScript検証に通過したが、スコアがまだ設定されていない場合
-      botScore = 0.7; // より人間らしいと判定
-      botTags.push('js_detection_base_score');
+      botTags.push('js_detection_failed');
+    } else if (jsDetectionPassed === true) {
+      botTags.push('js_detection_passed');
     }
     
-    // 検出情報がない場合、User-Agentベースでスコアを仮定
-    if (botScore === null) {
-      botScore = isBot ? 0.2 : 0.8; // ボットと判定されれば低いスコア、そうでなければ高いスコア
-    }
+    // Cloudflareから直接スコアを取得していない場合はnullのままにする
+    // スコアが設定されていない場合はnullのまま返す
     
     return NextResponse.json({
       botScore, 
@@ -133,7 +132,14 @@ export async function GET(request: NextRequest) {
         hasCfClearance
       },
       userAgent,
-      isBot
+      isBot,
+      debug: {
+        rawCfBotScore: cfBotScore,
+        rawCfBotTags: cfBotTags,
+        rawCfThreatScore: cfThreatScore,
+        rawCfWaf: cfWaf,
+        allHeaders: Object.fromEntries(request.headers)
+      }
     });
   } catch (error) {
     console.error('Cloudflare情報取得エラー:', error);

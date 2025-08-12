@@ -6,7 +6,7 @@ import { useCloudflareBot } from './CloudflareBotProvider';
 
 export default function BotScoreDisplay() {
   const { botScore: recaptchaScore } = useRecaptcha();
-  const { botScore: cloudflareScore, jsDetectionPassed } = useCloudflareBot();
+  const { botScore: cloudflareScore, jsDetectionPassed, getBotStatus } = useCloudflareBot();
   const [visible, setVisible] = useState(true);
 
   // スコアの色を判定
@@ -73,6 +73,22 @@ export default function BotScoreDisplay() {
       
       <div className="text-xs mt-3 text-gray-300 border-t border-gray-700 pt-2">
         スコアが高いほど人間である確率が高いです
+      </div>
+      
+      <div className="mt-3 pt-2 border-t border-gray-700">
+        <button 
+          onClick={async () => {
+            try {
+              const status = await getBotStatus();
+              console.log('最新のBot Status取得結果:', status);
+            } catch (error) {
+              console.error('Bot Status取得エラー:', error);
+            }
+          }}
+          className="text-xs bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded w-full"
+        >
+          ステータス更新（デバッグ）
+        </button>
       </div>
     </div>
   ) : null;

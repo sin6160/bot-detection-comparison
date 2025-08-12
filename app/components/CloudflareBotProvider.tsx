@@ -105,11 +105,23 @@ export default function CloudflareBotProvider({ children }: { children: React.Re
       setIsBotManagementEnabled(data.cloudflare?.hasBotHeaders || false);
       setJsDetectionPassed(data.jsDetectionPassed);
       
+      // デバッグ情報も表示
+      if (data.debug) {
+        console.log('Cloudflare Debug Info:', {
+          rawCfBotScore: data.debug.rawCfBotScore,
+          rawCfBotTags: data.debug.rawCfBotTags,
+          rawCfThreatScore: data.debug.rawCfThreatScore,
+          rawCfWaf: data.debug.rawCfWaf
+        });
+        console.log('Cloudflare Headers:', data.debug.allHeaders);
+      }
+      
       return {
         botScore: data.botScore,
         botTags: data.botTags || [],
-        isCloudflareBotManagementEnabled: data.isCloudflareBotManagementEnabled,
-        jsDetectionPassed: data.jsDetectionPassed
+        isCloudflareBotManagementEnabled: data.cloudflare?.hasBotHeaders || false,
+        jsDetectionPassed: data.jsDetectionPassed,
+        debug: data.debug
       };
     } catch (error) {
       console.error('Cloudflare Bot Status 取得エラー:', error);
