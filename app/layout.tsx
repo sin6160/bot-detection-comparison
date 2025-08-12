@@ -43,8 +43,6 @@ export default function RootLayout({
           id="cloudflare-challenge-script"
           src="/cdn-cgi/challenge-platform/scripts/jsd/main.js"
           strategy="afterInteractive"
-          onLoad={() => console.log('Cloudflare Challenge Platform スクリプトがロードされました')}
-          onError={(e) => console.error('Cloudflare スクリプトのロードに失敗しました', e)}
         />
 
         <RecaptchaProvider>
