@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRecaptcha } from './RecaptchaProvider';
 import { useCloudflareBot } from './CloudflareBotProvider';
 
 export default function BotScoreDisplay() {
   const { botScore: recaptchaScore } = useRecaptcha();
-  const { botScore: cloudflareScore } = useCloudflareBot();
+  const { botScore: cloudflareScore, jsDetectionPassed } = useCloudflareBot();
   const [visible, setVisible] = useState(true);
 
   // スコアの色を判定
@@ -16,6 +16,25 @@ export default function BotScoreDisplay() {
     if (score > 0.3) return 'text-yellow-400';
     return 'text-red-400';
   };
+
+  // JS検証結果のテキスト・色を判定
+  const getJsDetectionStatus = () => {
+    if (jsDetectionPassed === null) {
+      return { text: '未検証', className: 'text-gray-400' };
+    }
+    return jsDetectionPassed 
+      ? { text: '通過', className: 'text-green-400' }
+      : { text: '失敗', className: 'text-red-400' };
+  };
+
+  // デバッグ用 - スコアが変更されたら記録
+  useEffect(() => {
+    console.log('reCAPTCHA Score:', recaptchaScore);
+    console.log('Cloudflare Score:', cloudflareScore);
+    console.log('JS Detection Passed:', jsDetectionPassed);
+  }, [recaptchaScore, cloudflareScore, jsDetectionPassed]);
+
+  const jsDetectionStatus = getJsDetectionStatus();
 
   return visible ? (
     <div className="fixed bottom-4 left-4 p-4 bg-black/90 text-white rounded-lg z-50 text-sm min-w-[240px] shadow-lg">
@@ -41,6 +60,13 @@ export default function BotScoreDisplay() {
           <span className="font-medium">Cloudflare:</span>
           <span className={getScoreColor(cloudflareScore)}>
             {cloudflareScore !== null ? cloudflareScore.toFixed(3) : '-'}
+          </span>
+        </div>
+
+        <div className="flex justify-between items-center">
+          <span className="font-medium">JS検証:</span>
+          <span className={jsDetectionStatus.className}>
+            {jsDetectionStatus.text}
           </span>
         </div>
       </div>

@@ -55,12 +55,21 @@ const contactMessages: Array<{
   timestamp: Date;
   recaptchaScore?: number;
   cloudflareBotScore?: number;
+  cloudflareJsDetectionPassed?: boolean | null;
+  userAgent?: string;
+  clientHeaders?: Record<string, string>;
 }> = [];
 
 export async function POST(request: NextRequest) {
   try {
+    // 全てのヘッダーを取得
+    const headers: Record<string, string> = {};
+    request.headers.forEach((value, key) => {
+      headers[key] = value;
+    });
+
     // リクエストからデータを取得
-    const { email, message, recaptchaToken } = await request.json();
+    const { email, message, recaptchaToken, botDetection } = await request.json();
 
     // 入力検証
     if (!email || !message) {
@@ -75,17 +84,39 @@ export async function POST(request: NextRequest) {
     if (recaptchaToken) {
       const recaptchaResult = await verifyRecaptchaToken(recaptchaToken, 'CONTACT_SUBMIT');
       recaptchaScore = recaptchaResult.score;
-      
     }
 
-    // Cloudflare Bot Scoreを取得
-    // cf-bot-score: Cloudflareによるbot確度スコア (0-99)
+    // Cloudflareの情報を取得
+    // 1. cf-bot-score: Cloudflareによるbot確度スコア (0-99)
     let cloudflareBotScore: number | undefined;
     const cfBotScore = request.headers.get('cf-bot-score');
     if (cfBotScore) {
       const scoreNum = parseInt(cfBotScore, 10);
       cloudflareBotScore = scoreNum / 100; // 0-1の範囲に正規化
     }
+    
+    // 2. JavaScript Detectionの結果を取得
+    let jsDetectionStatus: boolean | null = null;
+    
+    // クライアントから送られたカスタムヘッダーを確認
+    const cfJsDetectionHeader = request.headers.get('x-cf-js-detection-status');
+    if (cfJsDetectionHeader) {
+      jsDetectionStatus = cfJsDetectionHeader.toLowerCase() === 'passed';
+    } 
+    // リクエストボディからの情報も取得
+    else if (botDetection?.cloudflareJsDetectionPassed !== undefined) {
+      jsDetectionStatus = botDetection.cloudflareJsDetectionPassed;
+    }
+    
+    // 3. CF Clearanceクッキーの確認
+    const hasCfClearance = (request.headers.get('cookie') || '').includes('cf_clearance=');
+    
+    // 4. cf-connecting-ip および cf-ipcountry
+    const cfConnectingIp = request.headers.get('cf-connecting-ip');
+    const cfIpCountry = request.headers.get('cf-ipcountry');
+
+    // User-Agent取得
+    const userAgent = request.headers.get('user-agent') || '';
 
     // お問い合わせメッセージを保存
     contactMessages.push({
@@ -93,7 +124,10 @@ export async function POST(request: NextRequest) {
       message,
       timestamp: new Date(),
       recaptchaScore,
-      cloudflareBotScore
+      cloudflareBotScore,
+      cloudflareJsDetectionPassed: jsDetectionStatus,
+      userAgent,
+      clientHeaders: headers
     });
 
     // デバッグ用にコンソールに出力
@@ -101,17 +135,36 @@ export async function POST(request: NextRequest) {
       email,
       message: message.substring(0, 20) + (message.length > 20 ? '...' : ''),
       recaptchaScore,
-      cloudflareBotScore
+      cloudflareBotScore,
+      cloudflareJsDetectionPassed: jsDetectionStatus,
+      hasCfClearance,
+      cfConnectingIp,
+      cfIpCountry
     });
 
-    return NextResponse.json({
+    // カスタムヘッダーを追加してレスポンスを返す
+    const response = NextResponse.json({
       success: true,
       message: 'お問い合わせを受け付けました',
       scores: {
         recaptcha: recaptchaScore,
-        cloudflare: cloudflareBotScore
+        cloudflare: cloudflareBotScore,
+        jsDetectionPassed: jsDetectionStatus
+      },
+      debug: {
+        hasCfClearance,
+        headers: {
+          cfRay: request.headers.get('cf-ray') || null,
+          cfConnectingIp,
+          cfIpCountry
+        }
       }
     });
+    
+    // カスタムヘッダーの追加
+    response.headers.set('X-Bot-Detection-Type', 'Cloudflare-Bot-Fight-Mode');
+    return response;
+    
   } catch (error) {
     console.error('お問い合わせ処理中のエラー:', error);
     

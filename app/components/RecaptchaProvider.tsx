@@ -1,9 +1,9 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 // reCAPTCHA Enterprise サイトキー
-const RECAPTCHA_SITE_KEY = '6LeCqJcrAAAAAC1Bh_VIuZutdmeQ_U_RhxzBAnYj';
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 interface RecaptchaContextType {
   executeRecaptcha: () => Promise<string>;
@@ -21,7 +21,7 @@ export const useRecaptcha = () => useContext(RecaptchaContext);
 
 export default function RecaptchaProvider({ children }: { children: React.ReactNode }) {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [recaptchaInstance, setRecaptchaInstance] = useState<any>(null);
+  const [recaptchaInstance, setRecaptchaInstance] = useState<typeof window.grecaptcha.enterprise | null>(null);
   const [botScore, setBotScore] = useState<number | null>(null);
 
   useEffect(() => {
@@ -79,6 +79,11 @@ export default function RecaptchaProvider({ children }: { children: React.ReactN
 
     try {
       if (window.grecaptcha && window.grecaptcha.enterprise) {
+        // サイトキーがない場合は実行できない
+        if (!RECAPTCHA_SITE_KEY) {
+          console.error('reCAPTCHA サイトキーが設定されていません');
+          return '';
+        }
         const token = await recaptchaInstance.execute(RECAPTCHA_SITE_KEY, { action: 'submit' });
         
         // スコアを取得するためにバックエンドAPIを呼び出す

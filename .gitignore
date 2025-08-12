@@ -44,3 +44,4 @@ next-env.d.ts
 CLAUDE.md
 .claude/*
 remote_deploy.sh
+setup-nginx.sh
