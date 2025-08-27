@@ -1,0 +1,432 @@
+2025-08-27 17:09:24,492 - INFO - Starting HTML Page Bot Fight Mode test
+2025-08-27 17:09:24,492 - INFO - Target URL: https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:24,492 - INFO - Number of requests: 20
+2025-08-27 17:09:24,492 - INFO - Number of threads: 4
+2025-08-27 17:09:24,492 - INFO - Delay between requests: 0.3s
+2025-08-27 17:09:24,492 - INFO - Thread 0, Attempt 0: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:24,578 - WARNING - Thread 0, Attempt 0: Cloudflare challenge page detected
+2025-08-27 17:09:24,579 - INFO - Thread 0, Attempt 0: Contact form found
+2025-08-27 17:09:24,579 - INFO - Thread 0, Attempt 0: reCAPTCHA detected
+2025-08-27 17:09:24,607 - INFO - Thread 0, Attempt 0: Form submission successful
+2025-08-27 17:09:24,797 - INFO - Thread 1, Attempt 1: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:24,826 - WARNING - Thread 1, Attempt 1: Cloudflare challenge page detected
+2025-08-27 17:09:24,827 - INFO - Thread 1, Attempt 1: Contact form found
+2025-08-27 17:09:24,827 - INFO - Thread 1, Attempt 1: reCAPTCHA detected
+2025-08-27 17:09:24,855 - INFO - Thread 1, Attempt 1: Form submission successful
+2025-08-27 17:09:25,102 - INFO - Thread 2, Attempt 2: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:25,133 - WARNING - Thread 2, Attempt 2: Cloudflare challenge page detected
+2025-08-27 17:09:25,134 - INFO - Thread 2, Attempt 2: Contact form found
+2025-08-27 17:09:25,135 - INFO - Thread 2, Attempt 2: reCAPTCHA detected
+2025-08-27 17:09:25,180 - INFO - Thread 2, Attempt 2: Form submission successful
+2025-08-27 17:09:25,406 - INFO - Thread 3, Attempt 3: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:25,434 - WARNING - Thread 3, Attempt 3: Cloudflare challenge page detected
+2025-08-27 17:09:25,435 - INFO - Thread 3, Attempt 3: Contact form found
+2025-08-27 17:09:25,436 - INFO - Thread 3, Attempt 3: reCAPTCHA detected
+2025-08-27 17:09:25,461 - INFO - Thread 3, Attempt 3: Form submission successful
+2025-08-27 17:09:25,710 - INFO - Thread 0, Attempt 4: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:25,737 - WARNING - Thread 0, Attempt 4: Cloudflare challenge page detected
+2025-08-27 17:09:25,739 - INFO - Thread 0, Attempt 4: Contact form found
+2025-08-27 17:09:25,739 - INFO - Thread 0, Attempt 4: reCAPTCHA detected
+2025-08-27 17:09:25,765 - INFO - Thread 0, Attempt 4: Form submission successful
+2025-08-27 17:09:26,011 - INFO - Thread 1, Attempt 5: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:26,042 - WARNING - Thread 1, Attempt 5: Cloudflare challenge page detected
+2025-08-27 17:09:26,044 - INFO - Thread 1, Attempt 5: Contact form found
+2025-08-27 17:09:26,044 - INFO - Thread 1, Attempt 5: reCAPTCHA detected
+2025-08-27 17:09:26,071 - INFO - Thread 1, Attempt 5: Form submission successful
+2025-08-27 17:09:26,316 - INFO - Thread 2, Attempt 6: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:26,343 - WARNING - Thread 2, Attempt 6: Cloudflare challenge page detected
+2025-08-27 17:09:26,346 - INFO - Thread 2, Attempt 6: Contact form found
+2025-08-27 17:09:26,346 - INFO - Thread 2, Attempt 6: reCAPTCHA detected
+2025-08-27 17:09:26,370 - INFO - Thread 2, Attempt 6: Form submission successful
+2025-08-27 17:09:26,621 - INFO - Thread 3, Attempt 7: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:26,652 - WARNING - Thread 3, Attempt 7: Cloudflare challenge page detected
+2025-08-27 17:09:26,655 - INFO - Thread 3, Attempt 7: Contact form found
+2025-08-27 17:09:26,655 - INFO - Thread 3, Attempt 7: reCAPTCHA detected
+2025-08-27 17:09:26,686 - INFO - Thread 3, Attempt 7: Form submission successful
+2025-08-27 17:09:26,923 - INFO - Thread 0, Attempt 8: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:26,951 - WARNING - Thread 0, Attempt 8: Cloudflare challenge page detected
+2025-08-27 17:09:26,953 - INFO - Thread 0, Attempt 8: Contact form found
+2025-08-27 17:09:26,953 - INFO - Thread 0, Attempt 8: reCAPTCHA detected
+2025-08-27 17:09:26,991 - INFO - Thread 0, Attempt 8: Form submission successful
+2025-08-27 17:09:27,227 - INFO - Thread 1, Attempt 9: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:27,255 - WARNING - Thread 1, Attempt 9: Cloudflare challenge page detected
+2025-08-27 17:09:27,257 - INFO - Thread 1, Attempt 9: Contact form found
+2025-08-27 17:09:27,257 - INFO - Thread 1, Attempt 9: reCAPTCHA detected
+2025-08-27 17:09:27,281 - INFO - Thread 1, Attempt 9: Form submission successful
+2025-08-27 17:09:27,532 - INFO - Thread 2, Attempt 10: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:27,570 - WARNING - Thread 2, Attempt 10: Cloudflare challenge page detected
+2025-08-27 17:09:27,574 - INFO - Thread 2, Attempt 10: Contact form found
+2025-08-27 17:09:27,574 - INFO - Thread 2, Attempt 10: reCAPTCHA detected
+2025-08-27 17:09:27,613 - INFO - Thread 2, Attempt 10: Form submission successful
+2025-08-27 17:09:27,836 - INFO - Thread 3, Attempt 11: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:27,880 - WARNING - Thread 3, Attempt 11: Cloudflare challenge page detected
+2025-08-27 17:09:27,889 - INFO - Thread 3, Attempt 11: Contact form found
+2025-08-27 17:09:27,889 - INFO - Thread 3, Attempt 11: reCAPTCHA detected
+2025-08-27 17:09:27,915 - INFO - Thread 3, Attempt 11: Form submission successful
+2025-08-27 17:09:28,140 - INFO - Thread 0, Attempt 12: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:28,170 - WARNING - Thread 0, Attempt 12: Cloudflare challenge page detected
+2025-08-27 17:09:28,171 - INFO - Thread 0, Attempt 12: Contact form found
+2025-08-27 17:09:28,171 - INFO - Thread 0, Attempt 12: reCAPTCHA detected
+2025-08-27 17:09:28,194 - INFO - Thread 0, Attempt 12: Form submission successful
+2025-08-27 17:09:28,440 - INFO - Thread 1, Attempt 13: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:28,470 - WARNING - Thread 1, Attempt 13: Cloudflare challenge page detected
+2025-08-27 17:09:28,472 - INFO - Thread 1, Attempt 13: Contact form found
+2025-08-27 17:09:28,472 - INFO - Thread 1, Attempt 13: reCAPTCHA detected
+2025-08-27 17:09:28,497 - INFO - Thread 1, Attempt 13: Form submission successful
+2025-08-27 17:09:28,746 - INFO - Thread 2, Attempt 14: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:28,782 - WARNING - Thread 2, Attempt 14: Cloudflare challenge page detected
+2025-08-27 17:09:28,785 - INFO - Thread 2, Attempt 14: Contact form found
+2025-08-27 17:09:28,785 - INFO - Thread 2, Attempt 14: reCAPTCHA detected
+2025-08-27 17:09:28,810 - INFO - Thread 2, Attempt 14: Form submission successful
+2025-08-27 17:09:29,049 - INFO - Thread 3, Attempt 15: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:29,076 - WARNING - Thread 3, Attempt 15: Cloudflare challenge page detected
+2025-08-27 17:09:29,078 - INFO - Thread 3, Attempt 15: Contact form found
+2025-08-27 17:09:29,078 - INFO - Thread 3, Attempt 15: reCAPTCHA detected
+2025-08-27 17:09:29,102 - INFO - Thread 3, Attempt 15: Form submission successful
+2025-08-27 17:09:29,354 - INFO - Thread 0, Attempt 16: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:29,387 - WARNING - Thread 0, Attempt 16: Cloudflare challenge page detected
+2025-08-27 17:09:29,390 - INFO - Thread 0, Attempt 16: Contact form found
+2025-08-27 17:09:29,391 - INFO - Thread 0, Attempt 16: reCAPTCHA detected
+2025-08-27 17:09:29,419 - INFO - Thread 0, Attempt 16: Form submission successful
+2025-08-27 17:09:29,658 - INFO - Thread 1, Attempt 17: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:29,685 - WARNING - Thread 1, Attempt 17: Cloudflare challenge page detected
+2025-08-27 17:09:29,687 - INFO - Thread 1, Attempt 17: Contact form found
+2025-08-27 17:09:29,687 - INFO - Thread 1, Attempt 17: reCAPTCHA detected
+2025-08-27 17:09:29,711 - INFO - Thread 1, Attempt 17: Form submission successful
+2025-08-27 17:09:29,963 - INFO - Thread 2, Attempt 18: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:29,993 - WARNING - Thread 2, Attempt 18: Cloudflare challenge page detected
+2025-08-27 17:09:29,997 - INFO - Thread 2, Attempt 18: Contact form found
+2025-08-27 17:09:29,997 - INFO - Thread 2, Attempt 18: reCAPTCHA detected
+2025-08-27 17:09:30,027 - INFO - Thread 2, Attempt 18: Form submission successful
+2025-08-27 17:09:30,266 - INFO - Thread 3, Attempt 19: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:09:30,297 - WARNING - Thread 3, Attempt 19: Cloudflare challenge page detected
+2025-08-27 17:09:30,299 - INFO - Thread 3, Attempt 19: Contact form found
+2025-08-27 17:09:30,299 - INFO - Thread 3, Attempt 19: reCAPTCHA detected
+2025-08-27 17:09:30,323 - INFO - Thread 3, Attempt 19: Form submission successful
+2025-08-27 17:09:30,569 - INFO - Thread 1, Attempt 5: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,569 - INFO - Thread 2, Attempt 10: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,569 - INFO - Thread 1, Attempt 1: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,569 - INFO - Thread 2, Attempt 2: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 3, Attempt 11: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 3, Attempt 19: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 1, Attempt 17: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 2, Attempt 18: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 0, Attempt 16: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 0, Attempt 8: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 3, Attempt 3: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 0, Attempt 4: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 3, Attempt 15: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 2, Attempt 6: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 2, Attempt 14: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 1, Attempt 9: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 3, Attempt 7: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 0, Attempt 12: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 1, Attempt 13: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,570 - INFO - Thread 0, Attempt 0: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:09:30,572 - INFO - Results saved to: attack-scripts/html_page_test_results_20250827_170930.json
+2025-08-27 17:11:26,489 - INFO - Starting HTML Page Bot Fight Mode test
+2025-08-27 17:11:26,489 - INFO - Target URL: https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,489 - INFO - Number of requests: 50
+2025-08-27 17:11:26,489 - INFO - Number of threads: 10
+2025-08-27 17:11:26,489 - INFO - Delay between requests: 0.1s
+2025-08-27 17:11:26,489 - INFO - Thread 0, Attempt 0: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,589 - INFO - Thread 1, Attempt 1: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,618 - WARNING - Thread 0, Attempt 0: Cloudflare challenge page detected
+2025-08-27 17:11:26,619 - INFO - Thread 0, Attempt 0: Contact form found
+2025-08-27 17:11:26,619 - INFO - Thread 0, Attempt 0: reCAPTCHA detected
+2025-08-27 17:11:26,645 - INFO - Thread 0, Attempt 0: Form submission successful
+2025-08-27 17:11:26,658 - WARNING - Thread 1, Attempt 1: Cloudflare challenge page detected
+2025-08-27 17:11:26,659 - INFO - Thread 1, Attempt 1: Contact form found
+2025-08-27 17:11:26,659 - INFO - Thread 1, Attempt 1: reCAPTCHA detected
+2025-08-27 17:11:26,685 - INFO - Thread 1, Attempt 1: Form submission successful
+2025-08-27 17:11:26,690 - INFO - Thread 2, Attempt 2: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,715 - WARNING - Thread 2, Attempt 2: Cloudflare challenge page detected
+2025-08-27 17:11:26,717 - INFO - Thread 2, Attempt 2: Contact form found
+2025-08-27 17:11:26,717 - INFO - Thread 2, Attempt 2: reCAPTCHA detected
+2025-08-27 17:11:26,740 - INFO - Thread 2, Attempt 2: Form submission successful
+2025-08-27 17:11:26,793 - INFO - Thread 3, Attempt 3: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,817 - WARNING - Thread 3, Attempt 3: Cloudflare challenge page detected
+2025-08-27 17:11:26,819 - INFO - Thread 3, Attempt 3: Contact form found
+2025-08-27 17:11:26,819 - INFO - Thread 3, Attempt 3: reCAPTCHA detected
+2025-08-27 17:11:26,843 - INFO - Thread 3, Attempt 3: Form submission successful
+2025-08-27 17:11:26,893 - INFO - Thread 4, Attempt 4: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:26,919 - WARNING - Thread 4, Attempt 4: Cloudflare challenge page detected
+2025-08-27 17:11:26,921 - INFO - Thread 4, Attempt 4: Contact form found
+2025-08-27 17:11:26,921 - INFO - Thread 4, Attempt 4: reCAPTCHA detected
+2025-08-27 17:11:26,948 - INFO - Thread 4, Attempt 4: Form submission successful
+2025-08-27 17:11:26,997 - INFO - Thread 5, Attempt 5: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,025 - WARNING - Thread 5, Attempt 5: Cloudflare challenge page detected
+2025-08-27 17:11:27,028 - INFO - Thread 5, Attempt 5: Contact form found
+2025-08-27 17:11:27,028 - INFO - Thread 5, Attempt 5: reCAPTCHA detected
+2025-08-27 17:11:27,057 - INFO - Thread 5, Attempt 5: Form submission successful
+2025-08-27 17:11:27,102 - INFO - Thread 6, Attempt 6: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,129 - WARNING - Thread 6, Attempt 6: Cloudflare challenge page detected
+2025-08-27 17:11:27,132 - INFO - Thread 6, Attempt 6: Contact form found
+2025-08-27 17:11:27,132 - INFO - Thread 6, Attempt 6: reCAPTCHA detected
+2025-08-27 17:11:27,156 - INFO - Thread 6, Attempt 6: Form submission successful
+2025-08-27 17:11:27,205 - INFO - Thread 7, Attempt 7: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,233 - WARNING - Thread 7, Attempt 7: Cloudflare challenge page detected
+2025-08-27 17:11:27,235 - INFO - Thread 7, Attempt 7: Contact form found
+2025-08-27 17:11:27,235 - INFO - Thread 7, Attempt 7: reCAPTCHA detected
+2025-08-27 17:11:27,257 - INFO - Thread 7, Attempt 7: Form submission successful
+2025-08-27 17:11:27,309 - INFO - Thread 8, Attempt 8: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,335 - WARNING - Thread 8, Attempt 8: Cloudflare challenge page detected
+2025-08-27 17:11:27,338 - INFO - Thread 8, Attempt 8: Contact form found
+2025-08-27 17:11:27,338 - INFO - Thread 8, Attempt 8: reCAPTCHA detected
+2025-08-27 17:11:27,365 - INFO - Thread 8, Attempt 8: Form submission successful
+2025-08-27 17:11:27,414 - INFO - Thread 9, Attempt 9: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,444 - WARNING - Thread 9, Attempt 9: Cloudflare challenge page detected
+2025-08-27 17:11:27,447 - INFO - Thread 9, Attempt 9: Contact form found
+2025-08-27 17:11:27,447 - INFO - Thread 9, Attempt 9: reCAPTCHA detected
+2025-08-27 17:11:27,472 - INFO - Thread 9, Attempt 9: Form submission successful
+2025-08-27 17:11:27,520 - INFO - Thread 0, Attempt 10: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,551 - WARNING - Thread 0, Attempt 10: Cloudflare challenge page detected
+2025-08-27 17:11:27,552 - INFO - Thread 0, Attempt 10: Contact form found
+2025-08-27 17:11:27,552 - INFO - Thread 0, Attempt 10: reCAPTCHA detected
+2025-08-27 17:11:27,578 - INFO - Thread 0, Attempt 10: Form submission successful
+2025-08-27 17:11:27,622 - INFO - Thread 1, Attempt 11: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,647 - WARNING - Thread 1, Attempt 11: Cloudflare challenge page detected
+2025-08-27 17:11:27,648 - INFO - Thread 1, Attempt 11: Contact form found
+2025-08-27 17:11:27,648 - INFO - Thread 1, Attempt 11: reCAPTCHA detected
+2025-08-27 17:11:27,673 - INFO - Thread 1, Attempt 11: Form submission successful
+2025-08-27 17:11:27,727 - INFO - Thread 2, Attempt 12: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,756 - WARNING - Thread 2, Attempt 12: Cloudflare challenge page detected
+2025-08-27 17:11:27,757 - INFO - Thread 2, Attempt 12: Contact form found
+2025-08-27 17:11:27,757 - INFO - Thread 2, Attempt 12: reCAPTCHA detected
+2025-08-27 17:11:27,783 - INFO - Thread 2, Attempt 12: Form submission successful
+2025-08-27 17:11:27,833 - INFO - Thread 3, Attempt 13: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,860 - WARNING - Thread 3, Attempt 13: Cloudflare challenge page detected
+2025-08-27 17:11:27,862 - INFO - Thread 3, Attempt 13: Contact form found
+2025-08-27 17:11:27,862 - INFO - Thread 3, Attempt 13: reCAPTCHA detected
+2025-08-27 17:11:27,887 - INFO - Thread 3, Attempt 13: Form submission successful
+2025-08-27 17:11:27,938 - INFO - Thread 4, Attempt 14: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:27,965 - WARNING - Thread 4, Attempt 14: Cloudflare challenge page detected
+2025-08-27 17:11:27,969 - INFO - Thread 4, Attempt 14: Contact form found
+2025-08-27 17:11:27,969 - INFO - Thread 4, Attempt 14: reCAPTCHA detected
+2025-08-27 17:11:27,993 - INFO - Thread 4, Attempt 14: Form submission successful
+2025-08-27 17:11:28,039 - INFO - Thread 5, Attempt 15: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,071 - WARNING - Thread 5, Attempt 15: Cloudflare challenge page detected
+2025-08-27 17:11:28,074 - INFO - Thread 5, Attempt 15: Contact form found
+2025-08-27 17:11:28,075 - INFO - Thread 5, Attempt 15: reCAPTCHA detected
+2025-08-27 17:11:28,101 - INFO - Thread 5, Attempt 15: Form submission successful
+2025-08-27 17:11:28,140 - INFO - Thread 6, Attempt 16: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,167 - WARNING - Thread 6, Attempt 16: Cloudflare challenge page detected
+2025-08-27 17:11:28,169 - INFO - Thread 6, Attempt 16: Contact form found
+2025-08-27 17:11:28,169 - INFO - Thread 6, Attempt 16: reCAPTCHA detected
+2025-08-27 17:11:28,192 - INFO - Thread 6, Attempt 16: Form submission successful
+2025-08-27 17:11:28,244 - INFO - Thread 7, Attempt 17: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,269 - WARNING - Thread 7, Attempt 17: Cloudflare challenge page detected
+2025-08-27 17:11:28,272 - INFO - Thread 7, Attempt 17: Contact form found
+2025-08-27 17:11:28,272 - INFO - Thread 7, Attempt 17: reCAPTCHA detected
+2025-08-27 17:11:28,298 - INFO - Thread 7, Attempt 17: Form submission successful
+2025-08-27 17:11:28,345 - INFO - Thread 8, Attempt 18: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,370 - WARNING - Thread 8, Attempt 18: Cloudflare challenge page detected
+2025-08-27 17:11:28,372 - INFO - Thread 8, Attempt 18: Contact form found
+2025-08-27 17:11:28,372 - INFO - Thread 8, Attempt 18: reCAPTCHA detected
+2025-08-27 17:11:28,396 - INFO - Thread 8, Attempt 18: Form submission successful
+2025-08-27 17:11:28,447 - INFO - Thread 9, Attempt 19: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,478 - WARNING - Thread 9, Attempt 19: Cloudflare challenge page detected
+2025-08-27 17:11:28,480 - INFO - Thread 9, Attempt 19: Contact form found
+2025-08-27 17:11:28,481 - INFO - Thread 9, Attempt 19: reCAPTCHA detected
+2025-08-27 17:11:28,505 - INFO - Thread 9, Attempt 19: Form submission successful
+2025-08-27 17:11:28,552 - INFO - Thread 0, Attempt 20: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,581 - WARNING - Thread 0, Attempt 20: Cloudflare challenge page detected
+2025-08-27 17:11:28,582 - INFO - Thread 0, Attempt 20: Contact form found
+2025-08-27 17:11:28,583 - INFO - Thread 0, Attempt 20: reCAPTCHA detected
+2025-08-27 17:11:28,609 - INFO - Thread 0, Attempt 20: Form submission successful
+2025-08-27 17:11:28,654 - INFO - Thread 1, Attempt 21: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,687 - WARNING - Thread 1, Attempt 21: Cloudflare challenge page detected
+2025-08-27 17:11:28,688 - INFO - Thread 1, Attempt 21: Contact form found
+2025-08-27 17:11:28,688 - INFO - Thread 1, Attempt 21: reCAPTCHA detected
+2025-08-27 17:11:28,715 - INFO - Thread 1, Attempt 21: Form submission successful
+2025-08-27 17:11:28,755 - INFO - Thread 2, Attempt 22: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,788 - WARNING - Thread 2, Attempt 22: Cloudflare challenge page detected
+2025-08-27 17:11:28,789 - INFO - Thread 2, Attempt 22: Contact form found
+2025-08-27 17:11:28,789 - INFO - Thread 2, Attempt 22: reCAPTCHA detected
+2025-08-27 17:11:28,816 - INFO - Thread 2, Attempt 22: Form submission successful
+2025-08-27 17:11:28,860 - INFO - Thread 3, Attempt 23: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,887 - WARNING - Thread 3, Attempt 23: Cloudflare challenge page detected
+2025-08-27 17:11:28,889 - INFO - Thread 3, Attempt 23: Contact form found
+2025-08-27 17:11:28,890 - INFO - Thread 3, Attempt 23: reCAPTCHA detected
+2025-08-27 17:11:28,914 - INFO - Thread 3, Attempt 23: Form submission successful
+2025-08-27 17:11:28,965 - INFO - Thread 4, Attempt 24: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:28,992 - WARNING - Thread 4, Attempt 24: Cloudflare challenge page detected
+2025-08-27 17:11:28,995 - INFO - Thread 4, Attempt 24: Contact form found
+2025-08-27 17:11:28,995 - INFO - Thread 4, Attempt 24: reCAPTCHA detected
+2025-08-27 17:11:29,020 - INFO - Thread 4, Attempt 24: Form submission successful
+2025-08-27 17:11:29,070 - INFO - Thread 5, Attempt 25: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,098 - WARNING - Thread 5, Attempt 25: Cloudflare challenge page detected
+2025-08-27 17:11:29,100 - INFO - Thread 5, Attempt 25: Contact form found
+2025-08-27 17:11:29,100 - INFO - Thread 5, Attempt 25: reCAPTCHA detected
+2025-08-27 17:11:29,126 - INFO - Thread 5, Attempt 25: Form submission successful
+2025-08-27 17:11:29,175 - INFO - Thread 6, Attempt 26: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,202 - WARNING - Thread 6, Attempt 26: Cloudflare challenge page detected
+2025-08-27 17:11:29,203 - INFO - Thread 6, Attempt 26: Contact form found
+2025-08-27 17:11:29,203 - INFO - Thread 6, Attempt 26: reCAPTCHA detected
+2025-08-27 17:11:29,230 - INFO - Thread 6, Attempt 26: Form submission successful
+2025-08-27 17:11:29,277 - INFO - Thread 7, Attempt 27: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,305 - WARNING - Thread 7, Attempt 27: Cloudflare challenge page detected
+2025-08-27 17:11:29,308 - INFO - Thread 7, Attempt 27: Contact form found
+2025-08-27 17:11:29,308 - INFO - Thread 7, Attempt 27: reCAPTCHA detected
+2025-08-27 17:11:29,331 - INFO - Thread 7, Attempt 27: Form submission successful
+2025-08-27 17:11:29,382 - INFO - Thread 8, Attempt 28: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,409 - WARNING - Thread 8, Attempt 28: Cloudflare challenge page detected
+2025-08-27 17:11:29,411 - INFO - Thread 8, Attempt 28: Contact form found
+2025-08-27 17:11:29,411 - INFO - Thread 8, Attempt 28: reCAPTCHA detected
+2025-08-27 17:11:29,437 - INFO - Thread 8, Attempt 28: Form submission successful
+2025-08-27 17:11:29,487 - INFO - Thread 9, Attempt 29: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,523 - WARNING - Thread 9, Attempt 29: Cloudflare challenge page detected
+2025-08-27 17:11:29,529 - INFO - Thread 9, Attempt 29: Contact form found
+2025-08-27 17:11:29,530 - INFO - Thread 9, Attempt 29: reCAPTCHA detected
+2025-08-27 17:11:29,559 - INFO - Thread 9, Attempt 29: Form submission successful
+2025-08-27 17:11:29,593 - INFO - Thread 0, Attempt 30: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,618 - WARNING - Thread 0, Attempt 30: Cloudflare challenge page detected
+2025-08-27 17:11:29,619 - INFO - Thread 0, Attempt 30: Contact form found
+2025-08-27 17:11:29,619 - INFO - Thread 0, Attempt 30: reCAPTCHA detected
+2025-08-27 17:11:29,641 - INFO - Thread 0, Attempt 30: Form submission successful
+2025-08-27 17:11:29,698 - INFO - Thread 1, Attempt 31: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,723 - WARNING - Thread 1, Attempt 31: Cloudflare challenge page detected
+2025-08-27 17:11:29,724 - INFO - Thread 1, Attempt 31: Contact form found
+2025-08-27 17:11:29,724 - INFO - Thread 1, Attempt 31: reCAPTCHA detected
+2025-08-27 17:11:29,748 - INFO - Thread 1, Attempt 31: Form submission successful
+2025-08-27 17:11:29,803 - INFO - Thread 2, Attempt 32: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,829 - WARNING - Thread 2, Attempt 32: Cloudflare challenge page detected
+2025-08-27 17:11:29,831 - INFO - Thread 2, Attempt 32: Contact form found
+2025-08-27 17:11:29,831 - INFO - Thread 2, Attempt 32: reCAPTCHA detected
+2025-08-27 17:11:29,856 - INFO - Thread 2, Attempt 32: Form submission successful
+2025-08-27 17:11:29,905 - INFO - Thread 3, Attempt 33: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:29,931 - WARNING - Thread 3, Attempt 33: Cloudflare challenge page detected
+2025-08-27 17:11:29,934 - INFO - Thread 3, Attempt 33: Contact form found
+2025-08-27 17:11:29,934 - INFO - Thread 3, Attempt 33: reCAPTCHA detected
+2025-08-27 17:11:29,961 - INFO - Thread 3, Attempt 33: Form submission successful
+2025-08-27 17:11:30,010 - INFO - Thread 4, Attempt 34: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,047 - WARNING - Thread 4, Attempt 34: Cloudflare challenge page detected
+2025-08-27 17:11:30,050 - INFO - Thread 4, Attempt 34: Contact form found
+2025-08-27 17:11:30,050 - INFO - Thread 4, Attempt 34: reCAPTCHA detected
+2025-08-27 17:11:30,077 - INFO - Thread 4, Attempt 34: Form submission successful
+2025-08-27 17:11:30,115 - INFO - Thread 5, Attempt 35: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,145 - WARNING - Thread 5, Attempt 35: Cloudflare challenge page detected
+2025-08-27 17:11:30,149 - INFO - Thread 5, Attempt 35: Contact form found
+2025-08-27 17:11:30,149 - INFO - Thread 5, Attempt 35: reCAPTCHA detected
+2025-08-27 17:11:30,177 - INFO - Thread 5, Attempt 35: Form submission successful
+2025-08-27 17:11:30,220 - INFO - Thread 6, Attempt 36: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,250 - WARNING - Thread 6, Attempt 36: Cloudflare challenge page detected
+2025-08-27 17:11:30,252 - INFO - Thread 6, Attempt 36: Contact form found
+2025-08-27 17:11:30,252 - INFO - Thread 6, Attempt 36: reCAPTCHA detected
+2025-08-27 17:11:30,285 - INFO - Thread 6, Attempt 36: Form submission successful
+2025-08-27 17:11:30,323 - INFO - Thread 7, Attempt 37: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,348 - WARNING - Thread 7, Attempt 37: Cloudflare challenge page detected
+2025-08-27 17:11:30,351 - INFO - Thread 7, Attempt 37: Contact form found
+2025-08-27 17:11:30,352 - INFO - Thread 7, Attempt 37: reCAPTCHA detected
+2025-08-27 17:11:30,379 - INFO - Thread 7, Attempt 37: Form submission successful
+2025-08-27 17:11:30,426 - INFO - Thread 8, Attempt 38: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,454 - WARNING - Thread 8, Attempt 38: Cloudflare challenge page detected
+2025-08-27 17:11:30,457 - INFO - Thread 8, Attempt 38: Contact form found
+2025-08-27 17:11:30,457 - INFO - Thread 8, Attempt 38: reCAPTCHA detected
+2025-08-27 17:11:30,486 - INFO - Thread 8, Attempt 38: Form submission successful
+2025-08-27 17:11:30,529 - INFO - Thread 9, Attempt 39: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,560 - WARNING - Thread 9, Attempt 39: Cloudflare challenge page detected
+2025-08-27 17:11:30,561 - INFO - Thread 9, Attempt 39: Contact form found
+2025-08-27 17:11:30,562 - INFO - Thread 9, Attempt 39: reCAPTCHA detected
+2025-08-27 17:11:30,584 - INFO - Thread 9, Attempt 39: Form submission successful
+2025-08-27 17:11:30,630 - INFO - Thread 0, Attempt 40: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,658 - WARNING - Thread 0, Attempt 40: Cloudflare challenge page detected
+2025-08-27 17:11:30,659 - INFO - Thread 0, Attempt 40: Contact form found
+2025-08-27 17:11:30,659 - INFO - Thread 0, Attempt 40: reCAPTCHA detected
+2025-08-27 17:11:30,684 - INFO - Thread 0, Attempt 40: Form submission successful
+2025-08-27 17:11:30,732 - INFO - Thread 1, Attempt 41: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,760 - WARNING - Thread 1, Attempt 41: Cloudflare challenge page detected
+2025-08-27 17:11:30,761 - INFO - Thread 1, Attempt 41: Contact form found
+2025-08-27 17:11:30,761 - INFO - Thread 1, Attempt 41: reCAPTCHA detected
+2025-08-27 17:11:30,785 - INFO - Thread 1, Attempt 41: Form submission successful
+2025-08-27 17:11:30,834 - INFO - Thread 2, Attempt 42: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,860 - WARNING - Thread 2, Attempt 42: Cloudflare challenge page detected
+2025-08-27 17:11:30,861 - INFO - Thread 2, Attempt 42: Contact form found
+2025-08-27 17:11:30,861 - INFO - Thread 2, Attempt 42: reCAPTCHA detected
+2025-08-27 17:11:30,887 - INFO - Thread 2, Attempt 42: Form submission successful
+2025-08-27 17:11:30,938 - INFO - Thread 3, Attempt 43: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:30,968 - WARNING - Thread 3, Attempt 43: Cloudflare challenge page detected
+2025-08-27 17:11:30,971 - INFO - Thread 3, Attempt 43: Contact form found
+2025-08-27 17:11:30,971 - INFO - Thread 3, Attempt 43: reCAPTCHA detected
+2025-08-27 17:11:30,995 - INFO - Thread 3, Attempt 43: Form submission successful
+2025-08-27 17:11:31,043 - INFO - Thread 4, Attempt 44: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,077 - WARNING - Thread 4, Attempt 44: Cloudflare challenge page detected
+2025-08-27 17:11:31,083 - INFO - Thread 4, Attempt 44: Contact form found
+2025-08-27 17:11:31,083 - INFO - Thread 4, Attempt 44: reCAPTCHA detected
+2025-08-27 17:11:31,107 - INFO - Thread 4, Attempt 44: Form submission successful
+2025-08-27 17:11:31,148 - INFO - Thread 5, Attempt 45: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,176 - WARNING - Thread 5, Attempt 45: Cloudflare challenge page detected
+2025-08-27 17:11:31,177 - INFO - Thread 5, Attempt 45: Contact form found
+2025-08-27 17:11:31,177 - INFO - Thread 5, Attempt 45: reCAPTCHA detected
+2025-08-27 17:11:31,199 - INFO - Thread 5, Attempt 45: Form submission successful
+2025-08-27 17:11:31,253 - INFO - Thread 6, Attempt 46: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,278 - WARNING - Thread 6, Attempt 46: Cloudflare challenge page detected
+2025-08-27 17:11:31,279 - INFO - Thread 6, Attempt 46: Contact form found
+2025-08-27 17:11:31,280 - INFO - Thread 6, Attempt 46: reCAPTCHA detected
+2025-08-27 17:11:31,303 - INFO - Thread 6, Attempt 46: Form submission successful
+2025-08-27 17:11:31,358 - INFO - Thread 7, Attempt 47: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,385 - WARNING - Thread 7, Attempt 47: Cloudflare challenge page detected
+2025-08-27 17:11:31,386 - INFO - Thread 7, Attempt 47: Contact form found
+2025-08-27 17:11:31,386 - INFO - Thread 7, Attempt 47: reCAPTCHA detected
+2025-08-27 17:11:31,411 - INFO - Thread 7, Attempt 47: Form submission successful
+2025-08-27 17:11:31,461 - INFO - Thread 8, Attempt 48: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,486 - WARNING - Thread 8, Attempt 48: Cloudflare challenge page detected
+2025-08-27 17:11:31,487 - INFO - Thread 8, Attempt 48: Contact form found
+2025-08-27 17:11:31,487 - INFO - Thread 8, Attempt 48: reCAPTCHA detected
+2025-08-27 17:11:31,511 - INFO - Thread 8, Attempt 48: Form submission successful
+2025-08-27 17:11:31,566 - INFO - Thread 9, Attempt 49: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 17:11:31,595 - WARNING - Thread 9, Attempt 49: Cloudflare challenge page detected
+2025-08-27 17:11:31,596 - INFO - Thread 9, Attempt 49: Contact form found
+2025-08-27 17:11:31,596 - INFO - Thread 9, Attempt 49: reCAPTCHA detected
+2025-08-27 17:11:31,622 - INFO - Thread 9, Attempt 49: Form submission successful
+2025-08-27 17:11:31,671 - INFO - Thread 1, Attempt 31: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 9, Attempt 39: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 8, Attempt 38: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 2, Attempt 2: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 8, Attempt 28: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 3, Attempt 43: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 2, Attempt 12: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 9, Attempt 49: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 2, Attempt 32: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 2, Attempt 22: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 6, Attempt 16: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 0, Attempt 40: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 6, Attempt 36: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 4, Attempt 4: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 7, Attempt 47: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 0, Attempt 30: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 6, Attempt 46: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 5, Attempt 5: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 8, Attempt 48: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 4, Attempt 44: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 4, Attempt 24: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 1, Attempt 1: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 7, Attempt 17: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,671 - INFO - Thread 9, Attempt 19: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 3, Attempt 13: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 8, Attempt 18: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 4, Attempt 14: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 6, Attempt 26: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 2, Attempt 42: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 8, Attempt 8: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 3, Attempt 3: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 0, Attempt 0: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 3, Attempt 33: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 6, Attempt 6: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 5, Attempt 15: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 9, Attempt 29: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 7, Attempt 37: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 3, Attempt 23: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 1, Attempt 41: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 1, Attempt 21: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 7, Attempt 27: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 7, Attempt 7: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 1, Attempt 11: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 5, Attempt 45: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 9, Attempt 9: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 5, Attempt 35: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 5, Attempt 25: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 0, Attempt 10: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 0, Attempt 20: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,672 - INFO - Thread 4, Attempt 34: SUCCESS [CF-CHALLENGE] [FORM-FOUND] [RECAPTCHA]
+2025-08-27 17:11:31,674 - INFO - Results saved to: attack-scripts/html_page_test_results_20250827_171131.json

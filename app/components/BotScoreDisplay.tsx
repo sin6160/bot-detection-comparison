@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useRecaptcha } from './RecaptchaProvider';
+import { useTurnstile } from './TurnstileProvider';
 
 export default function BotScoreDisplay() {
   const { botScore: recaptchaScore } = useRecaptcha();
+  const { turnstileToken } = useTurnstile();
   const [visible, setVisible] = useState(true);
 
   // スコアの色を判定
@@ -15,10 +17,19 @@ export default function BotScoreDisplay() {
     return 'text-red-400';
   };
 
+  // Turnstileの状態を判定
+  const getTurnstileStatus = () => {
+    if (turnstileToken) {
+      return { text: 'チェック済み', className: 'text-green-400' };
+    }
+    return { text: '未チェック', className: 'text-gray-400' };
+  };
+
   // デバッグ用 - スコアが変更されたら記録
   useEffect(() => {
     console.log('reCAPTCHA Score:', recaptchaScore);
-  }, [recaptchaScore]);
+    console.log('Turnstile Token:', turnstileToken ? 'あり' : 'なし');
+  }, [recaptchaScore, turnstileToken]);
 
   return visible ? (
     <div className="fixed bottom-4 left-4 p-4 bg-black/90 text-white rounded-lg z-50 text-sm min-w-[240px] shadow-lg">
@@ -37,6 +48,13 @@ export default function BotScoreDisplay() {
           <span className="font-medium">reCAPTCHA:</span>
           <span className={getScoreColor(recaptchaScore)}>
             {recaptchaScore !== null ? recaptchaScore.toFixed(2) : '-'}
+          </span>
+        </div>
+        
+        <div className="flex justify-between items-center">
+          <span className="font-medium">Turnstile:</span>
+          <span className={getTurnstileStatus().className}>
+            {getTurnstileStatus().text}
           </span>
         </div>
         

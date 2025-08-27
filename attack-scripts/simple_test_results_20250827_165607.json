@@ -1,0 +1,62 @@
+{
+  "test_summary": {
+    "target_url": "https://dev.saito-sandbox-dev.com/contact",
+    "api_endpoint": "https://dev.saito-sandbox-dev.com/api/contact",
+    "total_time": 0.10903382301330566,
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0
+  },
+  "cloudflare_detection": {
+    "blocks": 0,
+    "challenges_detected": 0,
+    "block_rate": 0.0,
+    "challenge_rate": 0.0
+  },
+  "performance": {
+    "avg_response_time": 0.10884594917297363,
+    "requests_per_second": 9.17146599434533
+  },
+  "status_codes": {
+    "200": 1
+  },
+  "bot_scores": {
+    "avg_score": null,
+    "total_scores_received": 0,
+    "scores": []
+  },
+  "detailed_results": [
+    {
+      "thread_id": 0,
+      "attempt": 0,
+      "timestamp": "2025-08-27T16:56:07.297159",
+      "success": false,
+      "error": "Invalid JSON response: Expecting value: line 1 column 1 (char 0)",
+      "response_time": 0.10884594917297363,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 07:56:01 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pQSDlLBLKoY4IcLOCNHHAu%2FT2utEj3QLnNjwGtLhf76q3HL1XSJVfc9tEwOdpYQ7XXLxvxJsG0rSmbuU0rPxL4zECSbKp8FLe4cV0hpS30kcDscomd3lUTE%3D\"}]}",
+        "Content-Encoding": "br",
+        "CF-RAY": "975a028edbddfcb6-KIX",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a028edbddfcb6-KIX"
+      }
+    }
+  ]
+}

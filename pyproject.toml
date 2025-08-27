@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bot-detection-comparison"
+version = "0.1.0"
+description = "Bot detection service comparison with attack scripts"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+selenium = "^4.15.0"
+webdriver-manager = "^4.0.0"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.13.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

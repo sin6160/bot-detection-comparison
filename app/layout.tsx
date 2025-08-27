@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import RecaptchaProvider from "./components/RecaptchaProvider";
+import TurnstileProvider from "./components/TurnstileProvider";
 import BotScoreDisplay from "./components/BotScoreDisplay";
 
 const geistSans = Geist({
@@ -38,8 +39,10 @@ export default function RootLayout({
       >
 
         <RecaptchaProvider>
-          {children}
-          <BotScoreDisplay />
+          <TurnstileProvider>
+            {children}
+            <BotScoreDisplay />
+          </TurnstileProvider>
         </RecaptchaProvider>
         
       </body>

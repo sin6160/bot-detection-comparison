@@ -9,7 +9,7 @@ export default function Home() {
         <div className="my-8">
           <h2 className="text-xl font-semibold mb-4">サービス紹介</h2>
           <p className="mb-4">
-            このサイトでは、reCAPTCHA EnterpriseとCloudflare Bot Fight Modeの
+            このサイトでは、reCAPTCHA EnterpriseとCloudflare Turnstileの
             bot検知機能を比較検証しています。
           </p>
           <p className="mb-4">
@@ -23,7 +23,13 @@ export default function Home() {
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="/contact"
           >
-            お問い合わせフォームへ
+            reCAPTCHA版フォーム
+          </Link>
+          <Link
+            className="rounded-full border border-solid border-blue-600 transition-colors flex items-center justify-center bg-blue-600 text-white gap-2 hover:bg-blue-700 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            href="/contact2"
+          >
+            Turnstile版フォーム
           </Link>
         </div>
       </main>

@@ -1,0 +1,62 @@
+{
+  "test_summary": {
+    "target_url": "https://dev.saito-sandbox-dev.com/contact",
+    "api_endpoint": "https://dev.saito-sandbox-dev.com/api/contact",
+    "total_time": 0.10238075256347656,
+    "total_requests": 1,
+    "successful_requests": 1,
+    "failed_requests": 0,
+    "success_rate": 100.0
+  },
+  "cloudflare_detection": {
+    "blocks": 0,
+    "challenges_detected": 0,
+    "block_rate": 0.0,
+    "challenge_rate": 0.0
+  },
+  "performance": {
+    "avg_response_time": 0.10193109512329102,
+    "requests_per_second": 9.767460923673081
+  },
+  "status_codes": {
+    "200": 1
+  },
+  "bot_scores": {
+    "avg_score": null,
+    "total_scores_received": 0,
+    "scores": []
+  },
+  "detailed_results": [
+    {
+      "thread_id": 0,
+      "attempt": 0,
+      "timestamp": "2025-08-27T16:56:52.640720",
+      "success": true,
+      "error": null,
+      "response_time": 0.10193109512329102,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 07:56:47 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ie2ZHwLvnd8Sdyay9f5d4KpgQ28p%2FnlQSbkH%2FowUqOSv0Dtea0z33OIycI5DRDDhxfEFXEgKTMhvfYP6lmdyqypd0ITD2ANdZPMsGqCrXohQgDCwVKeU8Ps%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a03aa5d67e09c-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a03aa5d67e09c-NRT"
+      }
+    }
+  ]
+}

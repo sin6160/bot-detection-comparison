@@ -1,0 +1,1581 @@
+{
+  "test_summary": {
+    "target_url": "https://dev.saito-sandbox-dev.com/contact",
+    "api_endpoint": "https://dev.saito-sandbox-dev.com/api/contact",
+    "total_time": 2.6742501258850098,
+    "total_requests": 50,
+    "successful_requests": 50,
+    "failed_requests": 0,
+    "success_rate": 100.0
+  },
+  "cloudflare_detection": {
+    "blocks": 0,
+    "challenges_detected": 0,
+    "block_rate": 0.0,
+    "challenge_rate": 0.0
+  },
+  "performance": {
+    "avg_response_time": 0.0370327091217041,
+    "requests_per_second": 18.69683000704847
+  },
+  "status_codes": {
+    "200": 50
+  },
+  "bot_scores": {
+    "avg_score": null,
+    "total_scores_received": 0,
+    "scores": []
+  },
+  "detailed_results": [
+    {
+      "thread_id": 9,
+      "attempt": 19,
+      "timestamp": "2025-08-27T17:04:45.343945",
+      "success": true,
+      "error": null,
+      "response_time": 0.028371810913085938,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gnvJHTHFNXy3Zm%2FpKbPflXpcSBZYjK5fYf8EcVHFpXd%2FptU68c1OZy6sjJ05gsqgOTbWXfVoYGDNmYI%2B%2FvJczH2K0rkuTcUYBgItBachbT9oGi73bAa6PVQ%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f345cf7fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f345cf7fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 2,
+      "attempt": 32,
+      "timestamp": "2025-08-27T17:04:46.029445",
+      "success": true,
+      "error": null,
+      "response_time": 0.023240089416503906,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=k3668RR4RXpy1MQu7VhfgZB7h62L8vcwY39maxdH0dIZcocDaT3wtmFPQv5XF4E1T4vNcZaxBoTshWSr%2BswlXKfSH1rXGwGQSJSYRbHeDlvjG1lg5mEAqsI%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f389c06fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f389c06fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 2,
+      "attempt": 12,
+      "timestamp": "2025-08-27T17:04:44.969495",
+      "success": true,
+      "error": null,
+      "response_time": 0.08592605590820312,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Rb7i7r6JhSzD7yiNkGsSVo1KbuyKqodU1kORmDBziXLuUSz7RULWH5ZSQHCmBagjfec2EuWTJZC9dTagbL4e9i6kdx%2B4GSady1Oi1kfdTsPLBh%2FcvFIGg%2FM%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f325d1fe387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f325d1fe387-NRT"
+      }
+    },
+    {
+      "thread_id": 1,
+      "attempt": 31,
+      "timestamp": "2025-08-27T17:04:45.974990",
+      "success": true,
+      "error": null,
+      "response_time": 0.028673171997070312,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MyXEKb4JtCXQQviN%2BDaEMQVky9RzRGGQtrYgwHo4Sx2lPIos0NftEn1rVi1BwF5SQWB%2BIkEmvg3eIizC%2Fzp2%2FXpDXZc4pZsR5UJJlWuuzhfrfWA3yvucP1Y%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f384b02fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f384b02fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 0,
+      "attempt": 10,
+      "timestamp": "2025-08-27T17:04:44.859381",
+      "success": true,
+      "error": null,
+      "response_time": 0.021983861923217773,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hCOpT0G0%2BIRz6CPEVs4Xl%2BnT8cc2Aqz1HDfLgv%2FazRgU6BO6w0I2ofsl9gcociAC2BIg9DIzvyu%2FnDQQXY3cF8boY1OLgdbHn4r8OWH5B9q7OMQ2unH4KME%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f31492de387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f31492de387-NRT"
+      }
+    },
+    {
+      "thread_id": 0,
+      "attempt": 30,
+      "timestamp": "2025-08-27T17:04:45.923975",
+      "success": true,
+      "error": null,
+      "response_time": 0.027225255966186523,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CWzSprVJ3l%2FkfUB6f0%2FpbWcRHHh2TVOQTi54sXbAEqcmYcAnqNj8oe5d7TaO5NOzkw8L7kLgREK7Ug4Ihx6qwakItVDYotBLOAEXPB2qFrT4ERvb4Uiw3N0%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f37fa1afd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f37fa1afd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 7,
+      "attempt": 7,
+      "timestamp": "2025-08-27T17:04:44.701509",
+      "success": true,
+      "error": null,
+      "response_time": 0.025673866271972656,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qkzm1oI74M3y649tdYdY0rGVWetxXUKiw4YpIksU5Ia2qotqTgfd%2FIYYPewF%2F9fwBmLM0vVBFewmlLw89MuyPYClMth8%2B3UBfS9V1Qqgv2P%2B96OleDzZElk%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f304dc6e387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f304dc6e387-NRT"
+      }
+    },
+    {
+      "thread_id": 8,
+      "attempt": 28,
+      "timestamp": "2025-08-27T17:04:45.817049",
+      "success": true,
+      "error": null,
+      "response_time": 0.026328086853027344,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rq5dVObisVqc%2Fh0Vb2KxsqhNGsrPtsNNufX3daeojcPDG0w0%2FNx4C5GolpBiGCX6WVYCwaX%2BYKunvMWZ9JT0DwBxbwHS3LEwmpGx8nx0Nf%2BfAFaFoiiO02M%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f374fc7fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f374fc7fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 6,
+      "attempt": 46,
+      "timestamp": "2025-08-27T17:04:46.783261",
+      "success": true,
+      "error": null,
+      "response_time": 0.02617478370666504,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bepoKvF3u3WDoJ3VDHHD0wQq6QVTNYthJpY3hws1HJx9r7qS%2Fbuq5%2BWc5cnVHn5ypBC%2FE3WQ57xYxX7p0ISvV%2F3ArhbgARjlpCLtYClI4iFeMKYE9dAD8vM%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3d5a84fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3d5a84fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 9,
+      "attempt": 9,
+      "timestamp": "2025-08-27T17:04:44.808510",
+      "success": true,
+      "error": null,
+      "response_time": 0.022634029388427734,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=IEJs5se%2BTO1Vqi4kOUMUXTZMHYmnJ3UmO4YEX%2Fu%2FPXXIPm3wsNJOWeknqEUtCcYm0CQIK7rK4VpMms5Ze65cc4WaX8yQzMAZlv6GahRVyoIvdxFstVLBhrA%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f30f812e387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f30f812e387-NRT"
+      }
+    },
+    {
+      "thread_id": 6,
+      "attempt": 6,
+      "timestamp": "2025-08-27T17:04:44.646439",
+      "success": true,
+      "error": null,
+      "response_time": 0.021802902221679688,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=m0CLvEKRwqjj4wH%2BKT0GjA%2FEuzluhhdrtV9jlJHRaqBFioqLv3alWAY7o65MRasxFSAiUNXmjoXbpzEVuDWrxS34yCqpGtCcZFiY%2BvO8EdZtRnYcQOF6Or4%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2ffca4e387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2ffca4e387-NRT"
+      }
+    },
+    {
+      "thread_id": 8,
+      "attempt": 8,
+      "timestamp": "2025-08-27T17:04:44.756596",
+      "success": true,
+      "error": null,
+      "response_time": 0.021858930587768555,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qG535uNSDqa8Y0eUCEIXpEXB0FDlwL%2FV3pU5yQCOiaF6F8lFZE1wU5RsAJPzMl8YfW6gyiwsIBvnhEb7HhEp3PbhQkhu20XdHm1%2BI%2BWYas%2FxCbSBdDxU6cs%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f30aedde387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f30aedde387-NRT"
+      }
+    },
+    {
+      "thread_id": 6,
+      "attempt": 26,
+      "timestamp": "2025-08-27T17:04:45.710020",
+      "success": true,
+      "error": null,
+      "response_time": 0.025651931762695312,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=m%2FCiU3BGZ3ttY0TWSn2IY3YcFppnlFimpQVRT7xN%2Fq6WpVEGVJPmtp7esFG3KP1sXk1uNrssNoeVz47UrCd24YG7HZ6FKokoVylcVxHh3hlCxWgMQQ9s%2Bcw%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f369d60fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f369d60fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 9,
+      "attempt": 49,
+      "timestamp": "2025-08-27T17:04:46.942379",
+      "success": true,
+      "error": null,
+      "response_time": 0.026540040969848633,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Pur%2FEmFEHwO7aVvArlbcJOrMBblECd02zhsPeRNcqeTXK6noJE%2Bf%2BF9qjS57rHqEgbqa0L80G%2BSUe%2F%2FSWNbFco4rUREeyahMYxiAbLYIONF0DVSUHKBk3DQ%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3e4dadfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3e4dadfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 5,
+      "attempt": 45,
+      "timestamp": "2025-08-27T17:04:46.728591",
+      "success": true,
+      "error": null,
+      "response_time": 0.03066396713256836,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7w4F6ptgIHnvW%2BRxNdDcp4Ojy9x4QC%2F39AmRZIg8gzxqXpTeIczs%2FeTydYDUg7laNzYSVs1eLaNEAcLOPnxRghbZ1WvQao4kQhHYYtApSecJggU1Hlw5kvU%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3cf9a9fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3cf9a9fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 6,
+      "attempt": 16,
+      "timestamp": "2025-08-27T17:04:45.185580",
+      "success": true,
+      "error": null,
+      "response_time": 0.029148101806640625,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=SnltyiOdOO6Ee%2FCx3d7%2F7jeGpzZSR5Zd%2BVZrftob9sb%2Bagtdmy4Pjl98v2io%2Fxv%2FkEeMWwPi41gLwUzlDdhIaxxbgkV5%2FzC9uKOvNtuO52R9SaubullGeCM%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3359abfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3359abfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 3,
+      "attempt": 3,
+      "timestamp": "2025-08-27T17:04:44.489638",
+      "success": true,
+      "error": null,
+      "response_time": 0.09379792213439941,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:38 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=73eJCuo1mjG%2BpYtf1NlnJylP%2BRQHsVarKMTPbUvQR1JOSpUn8NuJFe7fqvoqXfkT%2Bve91aGFLvBBqUXSncdCaqNNLW3ISseHPE%2BVP14Rl1JV%2F3bFBvcT9RQ%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2f6a5ae387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2f6a5ae387-NRT"
+      }
+    },
+    {
+      "thread_id": 8,
+      "attempt": 48,
+      "timestamp": "2025-08-27T17:04:46.892199",
+      "success": true,
+      "error": null,
+      "response_time": 0.02772998809814453,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qFLn2IlfiVXpMzAJ0dTa7%2FHSQphQUemKEFzUNsupoEbUgvV9YsY%2FV0ofIx3fr4lyJDhRXRs90UePXp94S1swutQTv1QkJMGeqM2aL%2BzfAFHS7saeJ28UzE8%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3dfccdfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3dfccdfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 0,
+      "attempt": 40,
+      "timestamp": "2025-08-27T17:04:46.456914",
+      "success": true,
+      "error": null,
+      "response_time": 0.03569984436035156,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FlN03Kt8OTtp%2FJ%2FiB4HdNRNNlG%2Fzg1iw9eWrqB5xIwZzWi6Tu8f9bDWQMtDGWp8qebdQcGeJbbpFu1%2B5x44cbefjE6dDoxti7epcHJ%2Fv4UiPIWoAkrZHofk%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3b4c81fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3b4c81fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 8,
+      "attempt": 18,
+      "timestamp": "2025-08-27T17:04:45.292385",
+      "success": true,
+      "error": null,
+      "response_time": 0.03344321250915527,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WXlixkE9x7p0Gnb3%2Fj6niO6wSv5U1SxDI7IKjvTLuk7mcO%2BtX3IQwTim6kr9blgVvm1wRf7wB1vt9PXJySPu%2FgXDnSSiXwt4dCnl3x9xMrqhXVoK2zXMGiA%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f340bbffd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f340bbffd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 7,
+      "attempt": 47,
+      "timestamp": "2025-08-27T17:04:46.838306",
+      "success": true,
+      "error": null,
+      "response_time": 0.02813577651977539,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DoK3veTMUyOfTx1vKV%2Fi1Hoqz94IJNv%2FFs438RfS2fl4iGXCpEpuCLudvDRAVzWjbVfOjCMSvAOPi1VBO%2FVnWjkM2Sxr%2BwAEp3qsH6opWxAtn5QrHuzXNxU%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3dab8efd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3dab8efd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 9,
+      "attempt": 39,
+      "timestamp": "2025-08-27T17:04:46.406178",
+      "success": true,
+      "error": null,
+      "response_time": 0.03637504577636719,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=p425eX10cbkRb9c5o0R%2Bv83%2F63cchnEDd4GgTnYABmeLYM4mfu%2FV0jy2jY1HsU3IPwrXC9eaIbRDnknSI%2BSDNGa2xs13ehMyzP%2F2FFYxEBisg32trvfHfrs%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3afb76fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3afb76fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 9,
+      "attempt": 29,
+      "timestamp": "2025-08-27T17:04:45.871870",
+      "success": true,
+      "error": null,
+      "response_time": 0.030966997146606445,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2BcQGZ4PwkqFpDQgnPFLLEMk123jPOsPT2BQZmms5weyXmiyViOIWb370avOPtc%2F3StHJuuOdwFbBL1%2BwTDpKivB%2BPMrVPzrmZYVJ5c0Se6soRP7vexEx3k%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3798e9fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3798e9fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 3,
+      "attempt": 23,
+      "timestamp": "2025-08-27T17:04:45.557282",
+      "success": true,
+      "error": null,
+      "response_time": 0.029595136642456055,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TjKm3cyr55FflViGyMFzuZj%2Bn5wd%2BCU9UAv%2BU3KDciIsuJkGBtZb4W2lstafHElKoHNAtIt3fPKMk8IwujsBuwzznAmVSJLeah5B8vcZwys2a2%2B7fPI8NAY%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f35aa37fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f35aa37fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 0,
+      "attempt": 20,
+      "timestamp": "2025-08-27T17:04:45.394806",
+      "success": true,
+      "error": null,
+      "response_time": 0.028123140335083008,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VYL1LjS9zkP0FH831kmkcFF%2BFc8%2FuUwE4oBQwDf9iculkMz9xF8ByWIf7t3z%2BPllp4c4q7mdqpeslN28AmeVDjeIsefVFr0mCr2L0ntpPCEF%2Fim0lZuZPTg%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f34ae1efd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f34ae1efd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 4,
+      "attempt": 44,
+      "timestamp": "2025-08-27T17:04:46.673133",
+      "success": true,
+      "error": null,
+      "response_time": 0.03529238700866699,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dwyWqfJaB6nc6r7Dw%2FuiCdjZz%2F%2BBqkPNj9RlXd%2FwyARbp6DAI47bGbAOmI9PyDO1bOeb2ZqcIl0rTwwTo2aEHkJPEHux2X96J7dvvWiGQbthBmxRDNrNB1k%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3ca8b0fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3ca8b0fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 8,
+      "attempt": 38,
+      "timestamp": "2025-08-27T17:04:46.350913",
+      "success": true,
+      "error": null,
+      "response_time": 0.030999183654785156,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WGmHN7aZUURJTe79AalOGcbujczns4W7Ge596fLySc7RyZJG1y7vC%2BGa8yN8rnYRwHLUSGB91PomhG2nxBuiwJS6D67VnWOh3juzXg824NrDNYg5bC7aRFg%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3a9a44fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3a9a44fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 3,
+      "attempt": 13,
+      "timestamp": "2025-08-27T17:04:45.023992",
+      "success": true,
+      "error": null,
+      "response_time": 0.03488016128540039,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5fcH%2FHG4FVk2VAJYTptwH72r6G1aKv25uWSyLkUdjgzT%2FkSxYywj7Abl1NZfy1q7cwYevkcYBkBeEMhQMh3Zw47H3LlXWGUFcgTN933okqxeGMwxktq4bXM%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f325e5dfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f325e5dfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 1,
+      "attempt": 41,
+      "timestamp": "2025-08-27T17:04:46.511954",
+      "success": true,
+      "error": null,
+      "response_time": 0.025936126708984375,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0zArcejiN861yXZoM3S6%2FyRZz%2Fw8uW1BhAjYEbEMVyVpqMe1qIKNxF4gQUuliGD6vF9Tkxo4walB0FgQIeAv7l%2B2wbNcEJMqoQeX3DZovti6wOFKCpyIeSY%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3b9dbbfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3b9dbbfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 2,
+      "attempt": 42,
+      "timestamp": "2025-08-27T17:04:46.564501",
+      "success": true,
+      "error": null,
+      "response_time": 0.0283510684967041,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MPFdH7sBOwo32Jk3JWQ82g4TKHcXILONMKsTqi6oR2W5F0jVVpRJDbW95mBdRYcpMratsiTLt6hyzqc2rwXil5F08eDJ9YIBNZkLyewchgf03P1TPT5kgx4%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3bfecdfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3bfecdfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 7,
+      "attempt": 37,
+      "timestamp": "2025-08-27T17:04:46.295851",
+      "success": true,
+      "error": null,
+      "response_time": 0.02669215202331543,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xUJdux%2B6bUWtYwj7uf89T%2FQpW2XAY0cWipAyVb9OwqL8UHXkguzRZELvDTzi4NXWpEG8Hyg9fUXJCpf4YZ3GzPTwPLVZ4uwezvNScn11NVooo5K%2Bsf3YPb8%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3a492bfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3a492bfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 5,
+      "attempt": 15,
+      "timestamp": "2025-08-27T17:04:45.134312",
+      "success": true,
+      "error": null,
+      "response_time": 0.03704977035522461,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=T9FLPajLWRNWJDk865fXxGj5DrYejwv%2BO7TDR8i9KXkjL%2BrupH6rLJQO9VkMNR5umjt7NaLSjQAztQ1H8ax%2BoMwkQBwgoXDfiXRjNpsjXPxhehovJsTeUJU%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3308c7fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3308c7fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 7,
+      "attempt": 27,
+      "timestamp": "2025-08-27T17:04:45.762031",
+      "success": true,
+      "error": null,
+      "response_time": 0.03517603874206543,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BxLy36QjQnk5UsF4Yke1zDyjzBhf3Pyl6sJjHMt7nIaRUUbxpF7H6lDkPSU%2BVFTuH9rrh%2BpgGwtEku4YJlinvLE3kyABRQgjf344IaP7Wo7Qo4Ms8mlLXJQ%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f36fe98fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f36fe98fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 4,
+      "attempt": 14,
+      "timestamp": "2025-08-27T17:04:45.079062",
+      "success": true,
+      "error": null,
+      "response_time": 0.03689694404602051,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=y05nZGk5q5LtBECZdN2l43uOOOm9RAXCk4uB6MhYP%2FW4NMiQyWhHDox6jnpUDHiIKcqCYBIFIIEDTs5%2BVOQh5NjUWGCynGMqLCS9wA6QjYzJ80po0jiQhSo%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f32bf7bfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f32bf7bfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 6,
+      "attempt": 36,
+      "timestamp": "2025-08-27T17:04:46.240737",
+      "success": true,
+      "error": null,
+      "response_time": 0.028840303421020508,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Q2JHpt30cqAH%2B23gHGtA0i%2BKcT8XnLVEoN6eiZmRTMLkm%2Fki7kptk5wXzG3eyogV89o44Ysnopz%2B7Zs899F6SI8Y8w8DG1cvDNPxWQ%2FRiq%2BakSWkAiKKgz4%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f39fffffd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f39fffffd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 2,
+      "attempt": 22,
+      "timestamp": "2025-08-27T17:04:45.505317",
+      "success": true,
+      "error": null,
+      "response_time": 0.04181694984436035,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nzZc4PHAVXy4GYr6kazMjPpOhnrryWvzjfv6U%2BNziEN8nVV2PC5dE3%2BkMhdHy9oW4ruAJU4WY6bVITW7%2B8XcMDsVImsSyNvyjJFTxmNDudvPZdO6mAzMV4U%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f356929fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f356929fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 5,
+      "attempt": 25,
+      "timestamp": "2025-08-27T17:04:45.659004",
+      "success": true,
+      "error": null,
+      "response_time": 0.03151082992553711,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=h2MGOMLC4Q6OG%2BScHBYUjZ3gDwqzsy%2By7xpZz%2BMDAHz4AzvhSwobNCgCoSKqaAMbxZirINrgy%2F7kWCysV6i4tMeHcBoOa6be64Vo4hScrTtCRTySBIBXBE0%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f364c54fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f364c54fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 4,
+      "attempt": 4,
+      "timestamp": "2025-08-27T17:04:44.540338",
+      "success": true,
+      "error": null,
+      "response_time": 0.02332901954650879,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:38 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yxOMGJI1afuzZ3NADKk0l2x9QEbLxuWirwDPQGDK1LOv5tPb%2F9TJjp3SJ4if5T1nBvSkrjzs3lPNjZp%2FW9xlFGWhL46ZoggWN4pf0OhJvjL8tfGAFMI2Rew%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2f4b6afd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2f4b6afd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 5,
+      "attempt": 35,
+      "timestamp": "2025-08-27T17:04:46.190202",
+      "success": true,
+      "error": null,
+      "response_time": 0.030221939086914062,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3JJ1PBhrg%2B7Ib4G3XIEIaCrij3IASJ08tDbUUjBt9C5XfkOJlD%2BbaiiGGe7em2x3fk089L3%2FQ9q5xR8QdH6YMIZAD2xPqADUxWqQfgV875%2BJBsUURxOXT5I%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f399f16fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f399f16fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 4,
+      "attempt": 24,
+      "timestamp": "2025-08-27T17:04:45.607843",
+      "success": true,
+      "error": null,
+      "response_time": 0.02427816390991211,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fuy5dWoeU0UhKJJ1pV1WbbUojzs5FMrL6e2DgWjXWGKW54ZF1X1u4oWH0kuVI%2BFPIm%2B9jG6fHP5pJ4WdCYqgnoR1auwndsfMLqbGVFH4%2FEH%2BmqndnlWXrEs%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f35fb33fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f35fb33fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 7,
+      "attempt": 17,
+      "timestamp": "2025-08-27T17:04:45.239910",
+      "success": true,
+      "error": null,
+      "response_time": 0.03246188163757324,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BGZXDA%2BbVL4UZUXQHJvVaaKm0wiuyoFyBWzndhNA7IB2ow%2BI5jKgPda61GKB86hDHRjram6VZAhW5REI9dJhRHKdlY%2FspegTywsmmK2JGpSK13xI2AawN3U%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f33bad5fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f33bad5fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 1,
+      "attempt": 11,
+      "timestamp": "2025-08-27T17:04:44.914453",
+      "success": true,
+      "error": null,
+      "response_time": 0.023591995239257812,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zGy8N%2Fci4bdG2zZlqn0qF6%2B9cix%2BWC082FOSFXl56MEsa4WzzmQf6Ix4uwQhXJI6oINrRi%2BFRpfjap%2FPkaT02xHu8OvgWscvuCz1cYhqeSeLofft9LuoODU%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f31aa73e387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f31aa73e387-NRT"
+      }
+    },
+    {
+      "thread_id": 1,
+      "attempt": 1,
+      "timestamp": "2025-08-27T17:04:44.379362",
+      "success": true,
+      "error": null,
+      "response_time": 0.14820313453674316,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:38 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0UQKpMzU4TOcweM0I%2BHry1Uta8h4LYJVfZsLimE3DBjDBH9iUgpksUr11%2B0RU61xxagA82Tqizf%2BtGWqZrJ%2B7g8i01WCV2Fq3WZlGb2iTW839CytABxAKQI%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2e78a2fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2e78a2fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 5,
+      "attempt": 5,
+      "timestamp": "2025-08-27T17:04:44.591511",
+      "success": true,
+      "error": null,
+      "response_time": 0.045454978942871094,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cF9xl%2FNzkHEMBLzh7IXEHTIkQh8A2VzL%2FalkAwsH866isqJm7WgVpm194xEN5b3quw6hMiSJpbvfTfwD66yENSKxbFf%2Fa78amUnlzoTxX1GQlmAEe9NDQPA%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2fab81e387-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2fab81e387-NRT"
+      }
+    },
+    {
+      "thread_id": 2,
+      "attempt": 2,
+      "timestamp": "2025-08-27T17:04:44.434508",
+      "success": true,
+      "error": null,
+      "response_time": 0.11396098136901855,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:38 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3xMYhrnGwWaczG7pe%2FKfrlQkRG2Qrh3XG5wkUYSBmy96NFiT3o584DhDYs5XjQ5KQVihUUNh9SgK0LYmqVKyoSEm4yR6oKQKOqsb3ghvYTj5amTY%2FzyKXzs%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2f2993e39d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2f2993e39d-NRT"
+      }
+    },
+    {
+      "thread_id": 4,
+      "attempt": 34,
+      "timestamp": "2025-08-27T17:04:46.135066",
+      "success": true,
+      "error": null,
+      "response_time": 0.0271759033203125,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=18LF7dZdi%2FPSo5r%2FELzYNiUrm%2FlKVElLiizvrbnz6vMZhzH%2BAj9YDpGHrb4Clw%2BcKa1JQKLELvbA7qJXQHz4RjTIFfao6CeK%2FISi1wXGrVxpI7FX8LfJcl8%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f394df2fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f394df2fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 1,
+      "attempt": 21,
+      "timestamp": "2025-08-27T17:04:45.450360",
+      "success": true,
+      "error": null,
+      "response_time": 0.038931846618652344,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:39 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iriA9VXYPmi3D5Qz6JjvfE%2BkxrysSy4LjPgkfXeQPf%2Fb6Bc5s4kOBf6aQkaDWrnbeupLPuYQjmLiL4AbmSBJka11mcCldPdV%2BikRkuHbaaxaIOMTuxLWEug%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f350f9cfd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f350f9cfd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 3,
+      "attempt": 43,
+      "timestamp": "2025-08-27T17:04:46.619610",
+      "success": true,
+      "error": null,
+      "response_time": 0.02656388282775879,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:41 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=LS023DTfLMATVQ9cExEU6A6OoiJqeaOc3Xi8RfmqeD%2BHvbV%2FwzgdxD%2Fwh6N9dj00UJTV2o3em4HYubHn2RmyIyLYIS7wwbatx1OGxHCbXYSaijwOdWO17gM%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f3c4f93fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f3c4f93fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 3,
+      "attempt": 33,
+      "timestamp": "2025-08-27T17:04:46.081674",
+      "success": true,
+      "error": null,
+      "response_time": 0.02628302574157715,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:40 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ydLGWzDTT7LhMibgLnfdAlH9V83Lby7GI0dlAYrBWa5aB4ft7A9oeFxT2ESuGUDVDnW10py%2F7nn%2BcYKe%2Bjr%2BVuN3axTeX4vP3tcThFkcFZY0kNPTm21DnZs%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f38fcf5fd4d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f38fcf5fd4d-NRT"
+      }
+    },
+    {
+      "thread_id": 0,
+      "attempt": 0,
+      "timestamp": "2025-08-27T17:04:44.324074",
+      "success": true,
+      "error": null,
+      "response_time": 0.08197283744812012,
+      "status_code": 200,
+      "cloudflare_blocked": false,
+      "challenge_detected": false,
+      "bot_score": null,
+      "response_headers": {
+        "Date": "Wed, 27 Aug 2025 08:04:38 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+        "X-Bot-Detection-Type": "Cloudflare-Bot-Fight-Mode",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rueEI9txxZrXpvsgei4jKFuWelL14xOW1Ug2N4GuRowPpcTQVQ4KApEVG0pa9xWSHqel%2F8W6seqva%2Bp7jszMPfyK55fDYafv%2B%2B9XbB4%2FAkSqyq0KueluWrw%3D\"}]}",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "975a0f2e3dace39d-NRT",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "cloudflare_headers": {
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "975a0f2e3dace39d-NRT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+'use client';
+
+import React, { createContext, useContext, useEffect, useState } from 'react';
+
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
+interface TurnstileContextType {
+  isTurnstileLoaded: boolean;
+  turnstileToken: string | null;
+  setTurnstileToken: (token: string | null) => void;
+  executeTurnstile: () => Promise<string | null>;
+  resetTurnstile: () => void;
+}
+
+const TurnstileContext = createContext<TurnstileContextType>({
+  isTurnstileLoaded: false,
+  turnstileToken: null,
+  setTurnstileToken: () => {},
+  executeTurnstile: async () => null,
+  resetTurnstile: () => {}
+});
+
+export const useTurnstile = () => useContext(TurnstileContext);
+
+export default function TurnstileProvider({ children }: { children: React.ReactNode }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [widgetId, setWidgetId] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Turnstileスクリプトの読み込み
+    if (typeof window !== 'undefined' && !window.turnstile) {
+      const script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        console.log('Turnstile script loaded');
+        setIsLoaded(true);
+      };
+      script.onerror = (error) => {
+        console.error('Turnstile script loading error:', error);
+      };
+      document.head.appendChild(script);
+    } else if (window.turnstile) {
+      setIsLoaded(true);
+    }
+  }, []);
+
+  const executeTurnstile = async (): Promise<string | null> => {
+    if (!isLoaded || !window.turnstile || !TURNSTILE_SITE_KEY) {
+      console.error('Turnstile not loaded or site key missing');
+      return null;
+    }
+
+    return new Promise((resolve) => {
+      try {
+        const id = window.turnstile.render('.cf-turnstile', {
+          sitekey: TURNSTILE_SITE_KEY,
+          callback: (token: string) => {
+            console.log('Turnstile token received:', token);
+            setTurnstileToken(token);
+            resolve(token);
+          },
+          'error-callback': (error: any) => {
+            console.error('Turnstile error:', error);
+            resolve(null);
+          },
+          theme: 'light',
+          size: 'normal'
+        });
+        setWidgetId(id);
+      } catch (error) {
+        console.error('Turnstile render error:', error);
+        resolve(null);
+      }
+    });
+  };
+
+  const resetTurnstile = () => {
+    if (isLoaded && window.turnstile && widgetId) {
+      window.turnstile.reset(widgetId);
+      setTurnstileToken(null);
+    }
+  };
+
+  return (
+    <TurnstileContext.Provider value={{
+      isTurnstileLoaded: isLoaded,
+      turnstileToken,
+      setTurnstileToken,
+      executeTurnstile,
+      resetTurnstile
+    }}>
+      {children}
+    </TurnstileContext.Provider>
+  );
+}
+
+// グローバル型定義
+declare global {
+  interface Window {
+    turnstile: {
+      render: (element: string | Element, options: {
+        sitekey: string;
+        callback: (token: string) => void;
+        'error-callback'?: (error: any) => void;
+        theme?: 'light' | 'dark' | 'auto';
+        size?: 'normal' | 'compact';
+      }) => string;
+      reset: (widgetId: string) => void;
+      remove: (widgetId: string) => void;
+    };
+  }
+}

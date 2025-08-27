@@ -1,0 +1,73 @@
+2025-08-27 16:51:10,090 - INFO - Starting Cloudflare Bot Fight Mode test
+2025-08-27 16:51:10,091 - INFO - Target URL: https://dev.saito-sandbox-dev.com/contact
+2025-08-27 16:51:10,091 - INFO - Number of requests: 5
+2025-08-27 16:51:10,091 - INFO - Number of threads: 2
+2025-08-27 16:51:10,091 - INFO - Delay between requests: 1.0s
+2025-08-27 16:51:10,091 - INFO - Headless mode: True
+2025-08-27 16:51:10,091 - INFO - ====== WebDriver manager ======
+2025-08-27 16:51:11,097 - INFO - ====== WebDriver manager ======
+2025-08-27 16:51:14,509 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,510 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,592 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,593 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,629 - INFO - There is no [mac64] chromedriver "139.0.7258.154" for browser google-chrome "139.0.7258" in cache
+2025-08-27 16:51:14,632 - INFO - There is no [mac64] chromedriver "139.0.7258.154" for browser google-chrome "139.0.7258" in cache
+2025-08-27 16:51:14,636 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,636 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:14,742 - INFO - WebDriver version 139.0.7258.154 selected
+2025-08-27 16:51:14,746 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-27 16:51:14,757 - INFO - WebDriver version 139.0.7258.154 selected
+2025-08-27 16:51:14,757 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-27 16:51:14,760 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-27 16:51:14,760 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-27 16:51:14,870 - INFO - Driver downloading response is 200
+2025-08-27 16:51:14,870 - INFO - Driver downloading response is 200
+2025-08-27 16:51:16,012 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:16,110 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:16,121 - INFO - Driver has been saved in cache [/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154]
+2025-08-27 16:51:16,197 - INFO - Driver has been saved in cache [/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154]
+2025-08-27 16:51:16,279 - ERROR - Thread 1, Attempt 1: WebDriver error: Message: Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver unexpectedly exited. Status code was: -9
+
+2025-08-27 16:51:16,281 - INFO - ====== WebDriver manager ======
+2025-08-27 16:51:16,282 - INFO - Thread 1, Attempt 1: FAILED (WebDriver error: Message: Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver unexpectedly exited. Status code was: -9
+)
+2025-08-27 16:51:16,459 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:16,493 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:16,529 - INFO - Driver [/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver] found in cache
+2025-08-27 16:51:17,818 - INFO - Thread 0, Attempt 0: Accessing https://dev.saito-sandbox-dev.com/contact
+2025-08-27 16:51:19,386 - WARNING - Thread 0, Attempt 0: Form submission failed
+2025-08-27 16:51:19,488 - INFO - ====== WebDriver manager ======
+2025-08-27 16:51:19,488 - INFO - Thread 0, Attempt 0: FAILED (Form submission failed)
+2025-08-27 16:51:19,673 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:19,707 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:51:19,743 - INFO - Driver [/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver] found in cache
+2025-08-27 16:51:49,266 - ERROR - Thread 0, Attempt 2: WebDriver error: Message: Can not connect to the Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver
+
+2025-08-27 16:51:52,484 - ERROR - Thread 1, Attempt 3: WebDriver error: Message: Can not connect to the Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver
+
+2025-08-27 16:52:49,273 - ERROR - Service process refused to terminate gracefully with SIGTERM, escalating to SIGKILL.
+Traceback (most recent call last):
+  File "/Users/ie-saito/Library/Caches/pypoetry/virtualenvs/bot-detection-comparison-u60V1iVj-py3.9/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 178, in _terminate_process
+    self.process.wait(60)
+  File "/Users/ie-saito/.pyenv/versions/3.9.6/lib/python3.9/subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "/Users/ie-saito/.pyenv/versions/3.9.6/lib/python3.9/subprocess.py", line 1909, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver', '--port=52111']' timed out after 60 seconds
+2025-08-27 16:52:49,287 - INFO - ====== WebDriver manager ======
+2025-08-27 16:52:49,287 - INFO - Thread 0, Attempt 2: FAILED (WebDriver error: Message: Can not connect to the Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver
+)
+2025-08-27 16:52:49,474 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:52:49,508 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-27 16:52:49,544 - INFO - Driver [/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver] found in cache
+2025-08-27 16:52:52,489 - ERROR - Service process refused to terminate gracefully with SIGTERM, escalating to SIGKILL.
+Traceback (most recent call last):
+  File "/Users/ie-saito/Library/Caches/pypoetry/virtualenvs/bot-detection-comparison-u60V1iVj-py3.9/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 178, in _terminate_process
+    self.process.wait(60)
+  File "/Users/ie-saito/.pyenv/versions/3.9.6/lib/python3.9/subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "/Users/ie-saito/.pyenv/versions/3.9.6/lib/python3.9/subprocess.py", line 1909, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver', '--port=52178']' timed out after 60 seconds
+2025-08-27 16:52:52,492 - INFO - Thread 1, Attempt 3: FAILED (WebDriver error: Message: Can not connect to the Service /Users/ie-saito/.wdm/drivers/chromedriver/mac64/139.0.7258.154/chromedriver-mac-arm64/chromedriver
+)
