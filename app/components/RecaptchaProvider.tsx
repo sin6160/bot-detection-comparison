@@ -9,12 +9,14 @@ interface RecaptchaContextType {
   executeRecaptcha: () => Promise<string>;
   isRecaptchaLoaded: boolean;
   botScore: number | null;
+  setBotScore: (score: number | null) => void;
 }
 
 const RecaptchaContext = createContext<RecaptchaContextType>({
   executeRecaptcha: async () => '',
   isRecaptchaLoaded: false,
-  botScore: null
+  botScore: null,
+  setBotScore: () => {}
 });
 
 export const useRecaptcha = () => useContext(RecaptchaContext);
@@ -88,6 +90,7 @@ export default function RecaptchaProvider({ children }: { children: React.ReactN
         
         // スコアを取得するためにバックエンドAPIを呼び出す
         try {
+          console.log('reCAPTCHAスコア取得開始:', { token: token.substring(0, 20) + '...' });
           const response = await fetch('/api/recaptcha', {
             method: 'POST',
             headers: {
@@ -97,8 +100,13 @@ export default function RecaptchaProvider({ children }: { children: React.ReactN
           });
           
           const result = await response.json();
+          console.log('reCAPTCHA API レスポンス:', result);
+          
           if (result.success && typeof result.score === 'number') {
+            console.log('reCAPTCHAスコア設定:', result.score);
             setBotScore(result.score);
+          } else {
+            console.warn('reCAPTCHAスコア取得失敗:', result);
           }
         } catch (verifyError) {
           console.error('reCAPTCHAスコア検証エラー:', verifyError);
@@ -119,7 +127,8 @@ export default function RecaptchaProvider({ children }: { children: React.ReactN
     <RecaptchaContext.Provider value={{
       executeRecaptcha,
       isRecaptchaLoaded: isLoaded,
-      botScore
+      botScore,
+      setBotScore
     }}>
       {children}
     </RecaptchaContext.Provider>

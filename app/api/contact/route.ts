@@ -1,52 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-// reCAPTCHA検証用の関数をインポート
-// 実際にはimportするべきだが、ここでは簡単のために再定義します
-async function verifyRecaptchaToken(token: string, action: string) {
-  const PROJECT_ID = process.env.GOOGLE_CLOUD_PROJECT_ID || '';
-  const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '';
-  const API_KEY = process.env.GOOGLE_API_KEY || '';
-
-  try {
-    // リクエストボディを作成
-    const requestBody = {
-      event: {
-        token,
-        siteKey: RECAPTCHA_SITE_KEY,
-        expectedAction: action
-      }
-    };
-
-    // REST API使用（API Key認証）
-    const response = await fetch(`https://recaptchaenterprise.googleapis.com/v1/projects/${PROJECT_ID}/assessments?key=${API_KEY}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestBody),
-    });
-
-    const assessment = await response.json();
-
-    // トークンの検証
-    if (!assessment.tokenProperties?.valid) {
-      return { 
-        valid: false, 
-        score: 0
-      };
-    }
-
-    // 結果の返却
-    return {
-      valid: true,
-      score: assessment.riskAnalysis?.score || 0
-    };
-
-  } catch (error) {
-    console.error('reCAPTCHA Enterprise API エラー:', error);
-    return { valid: false, score: 0 };
-  }
-}
+import { verifyRecaptchaToken } from '@/app/lib/recaptcha';
 
 // お問い合わせ内容保存
 const contactMessages: Array<{
@@ -80,10 +33,18 @@ export async function POST(request: NextRequest) {
     }
 
     // reCAPTCHA検証
-    let recaptchaScore = 0;
+    let recaptchaScore: number | null = null;
     if (recaptchaToken) {
-      const recaptchaResult = await verifyRecaptchaToken(recaptchaToken, 'CONTACT_SUBMIT');
-      recaptchaScore = recaptchaResult.score;
+      console.log('Contact API: reCAPTCHA検証開始');
+      const recaptchaResult = await verifyRecaptchaToken(recaptchaToken, 'submit');
+      console.log('Contact API: reCAPTCHA検証結果:', recaptchaResult);
+      if (recaptchaResult.valid) {
+        recaptchaScore = recaptchaResult.score;
+      } else {
+        console.error('Contact API: reCAPTCHA検証失敗:', recaptchaResult);
+      }
+    } else {
+      console.log('Contact API: reCAPTCHAトークンなし');
     }
 
     // Cloudflareの情報を取得
@@ -123,7 +84,7 @@ export async function POST(request: NextRequest) {
       email,
       message,
       timestamp: new Date(),
-      recaptchaScore,
+      recaptchaScore: recaptchaScore ?? undefined,
       cloudflareBotScore,
       cloudflareJsDetectionPassed: jsDetectionStatus,
       userAgent,
