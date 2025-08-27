@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { useTurnstile } from './TurnstileProvider';
 
-const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
 
 interface TurnstileWidgetProps {
   onSuccess?: (token: string) => void;

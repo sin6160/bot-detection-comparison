@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
 
 interface TurnstileContextType {
   isTurnstileLoaded: boolean;
@@ -26,6 +26,13 @@ export default function TurnstileProvider({ children }: { children: React.ReactN
   const [isLoaded, setIsLoaded] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [widgetId, setWidgetId] = useState<string | null>(null);
+
+  // デバッグ: サイトキーの確認
+  useEffect(() => {
+    console.log('TURNSTILE_SITE_KEY:', TURNSTILE_SITE_KEY);
+    console.log('TURNSTILE_SITE_KEY type:', typeof TURNSTILE_SITE_KEY);
+    console.log('TURNSTILE_SITE_KEY length:', TURNSTILE_SITE_KEY?.length);
+  }, []);
 
   useEffect(() => {
     // Turnstileスクリプトの読み込み
