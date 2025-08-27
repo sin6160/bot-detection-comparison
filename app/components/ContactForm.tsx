@@ -53,11 +53,12 @@ export default function ContactForm() {
       if (response.ok) {
         // レスポンスからreCAPTCHAスコアを取得してBotScoreDisplayに反映
         console.log('ContactForm レスポンスデータ:', data);
-        if (data.scores?.recaptcha !== undefined) {
+        if (data.scores?.recaptcha !== undefined && data.scores.recaptcha !== null) {
           console.log('ContactFormでスコア設定:', data.scores.recaptcha);
           setBotScore(data.scores.recaptcha);
         } else {
-          console.warn('ContactFormでスコアが見つかりません:', data);
+          console.warn('ContactFormでスコアが見つかりません。現在のスコアを保持します:', data);
+          // スコアがnullやundefinedの場合は既存のスコアを保持（setBotScoreを呼ばない）
         }
         
         setStatus({
