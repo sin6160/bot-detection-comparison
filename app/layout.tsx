@@ -31,7 +31,7 @@ export default function RootLayout({
         {/* Content-Security-Policy ヘッダーを設定してreCAPTCHAを許可する */}
         <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google.com; frame-src https://www.google.com https://www.gstatic.com;"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google.com https://challenges.cloudflare.com; frame-src https://www.google.com https://www.gstatic.com https://challenges.cloudflare.com;"
         />
       </head>
       <body

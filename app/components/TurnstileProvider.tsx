@@ -35,11 +35,24 @@ export default function TurnstileProvider({ children }: { children: React.ReactN
       script.async = true;
       script.defer = true;
       script.onload = () => {
-        console.log('Turnstile script loaded');
+        console.log('Turnstile script loaded successfully');
         setIsLoaded(true);
       };
       script.onerror = (error) => {
         console.error('Turnstile script loading error:', error);
+        console.error('Error details:', {
+          message: error instanceof ErrorEvent ? error.message : 'Unknown error',
+          filename: error instanceof ErrorEvent ? error.filename : 'Unknown file',
+          lineno: error instanceof ErrorEvent ? error.lineno : 'Unknown line',
+          colno: error instanceof ErrorEvent ? error.colno : 'Unknown column'
+        });
+        console.error('Script src:', script.src);
+        console.error('Script element:', script);
+        
+        // フォールバック：開発環境では警告のみ表示
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('Development mode: Continuing without Turnstile');
+        }
       };
       document.head.appendChild(script);
     } else if (window.turnstile) {
