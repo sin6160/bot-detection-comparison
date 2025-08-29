@@ -15,7 +15,7 @@ export default function Contact2Page() {
           このページではCloudflare Turnstileを使用してBot検知を行います。
         </p>
         <p>
-          送信ボタンの上に表示されるチェックボックスをクリックして認証を完了してください。
+          Turnstileが自動的にブラウザの信頼性を判定し、必要に応じて認証チャレンジを表示します。
         </p>
       </div>
       <ContactForm2 />

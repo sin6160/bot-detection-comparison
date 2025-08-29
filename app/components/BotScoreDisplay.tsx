@@ -1,13 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { useRecaptcha } from './RecaptchaProvider';
 import { useTurnstile } from './TurnstileProvider';
 
 export default function BotScoreDisplay() {
+  const pathname = usePathname();
   const { botScore: recaptchaScore } = useRecaptcha();
   const { turnstileToken } = useTurnstile();
   const [visible, setVisible] = useState(true);
+
+  // contact2ページでは表示しない
+  const shouldShow = pathname !== '/contact2';
 
   // スコアの色を判定
   const getScoreColor = (score: number | null) => {
@@ -31,7 +36,7 @@ export default function BotScoreDisplay() {
     console.log('Turnstile Token:', turnstileToken ? 'あり' : 'なし');
   }, [recaptchaScore, turnstileToken]);
 
-  return visible ? (
+  return visible && shouldShow ? (
     <div className="fixed bottom-4 left-4 p-4 bg-black/90 text-white rounded-lg z-50 text-sm min-w-[240px] shadow-lg">
       <div className="flex justify-between items-center mb-3">
         <h3 className="font-bold text-base">Bot検知スコア</h3>
