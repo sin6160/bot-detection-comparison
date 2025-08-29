@@ -21,43 +21,53 @@ export default function TurnstileWidget({
   const { isTurnstileLoaded, setTurnstileToken } = useTurnstile();
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
+  const isInitializedRef = useRef(false);
 
-  // コールバック関数をメモ化
-  const handleSuccess = useCallback((token: string) => {
-    console.log('Turnstile widget success:', token);
-    setTurnstileToken(token);
-    if (onSuccess) {
-      onSuccess(token);
+  // ウィジェットをリセットする関数
+  const resetWidget = useCallback(() => {
+    if (widgetIdRef.current && window.turnstile) {
+      try {
+        window.turnstile.reset(widgetIdRef.current);
+        setTurnstileToken(null);
+      } catch (error) {
+        console.warn('Failed to reset Turnstile widget:', error);
+      }
     }
-  }, [onSuccess, setTurnstileToken]);
+  }, [setTurnstileToken]);
 
-  const handleError = useCallback((error: unknown) => {
-    console.error('Turnstile widget error:', error);
-    if (onError) {
-      onError(error);
-    }
-  }, [onError]);
+  // リセット機能をグローバルに公開（デバッグ用）
+  useEffect(() => {
+    (window as any).resetTurnstile = resetWidget;
+    return () => {
+      delete (window as any).resetTurnstile;
+    };
+  }, [resetWidget]);
 
   useEffect(() => {
-    if (!isTurnstileLoaded || !window.turnstile || !TURNSTILE_SITE_KEY || !containerRef.current) {
+    // 初期化済みまたは必要な条件が揃っていない場合は何もしない
+    if (isInitializedRef.current || !isTurnstileLoaded || !window.turnstile || !TURNSTILE_SITE_KEY || !containerRef.current) {
       return;
     }
 
-    // 既存のウィジェットがある場合は削除
-    if (widgetIdRef.current) {
-      try {
-        window.turnstile.remove(widgetIdRef.current);
-        widgetIdRef.current = null;
-      } catch (error) {
-        console.warn('Failed to remove existing Turnstile widget:', error);
-      }
-    }
+    // 初期化フラグを設定
+    isInitializedRef.current = true;
 
     try {
       const widgetId = window.turnstile.render(containerRef.current, {
         sitekey: TURNSTILE_SITE_KEY,
-        callback: handleSuccess,
-        'error-callback': handleError,
+        callback: (token: string) => {
+          console.log('Turnstile widget success:', token);
+          setTurnstileToken(token);
+          if (onSuccess) {
+            onSuccess(token);
+          }
+        },
+        'error-callback': (error: unknown) => {
+          console.error('Turnstile widget error:', error);
+          if (onError) {
+            onError(error);
+          }
+        },
         theme,
         size
       });
@@ -66,7 +76,10 @@ export default function TurnstileWidget({
       console.log('Turnstile widget rendered with ID:', widgetId);
     } catch (error) {
       console.error('Turnstile widget render error:', error);
-      handleError(error);
+      isInitializedRef.current = false; // エラー時は再試行を許可
+      if (onError) {
+        onError(error);
+      }
     }
 
     // クリーンアップ関数
@@ -74,13 +87,14 @@ export default function TurnstileWidget({
       if (widgetIdRef.current && window.turnstile) {
         try {
           window.turnstile.remove(widgetIdRef.current);
-          widgetIdRef.current = null;
         } catch (error) {
           console.warn('Failed to cleanup Turnstile widget:', error);
         }
       }
+      widgetIdRef.current = null;
+      isInitializedRef.current = false;
     };
-  }, [isTurnstileLoaded, handleSuccess, handleError, theme, size]);
+  }, [isTurnstileLoaded, theme, size]); // onSuccess, onError, setTurnstileTokenを依存関係から除外
 
   if (!isTurnstileLoaded) {
     return (
