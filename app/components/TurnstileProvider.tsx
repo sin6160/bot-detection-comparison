@@ -82,7 +82,7 @@ export default function TurnstileProvider({ children }: { children: React.ReactN
             setTurnstileToken(token);
             resolve(token);
           },
-          'error-callback': (error: any) => {
+          'error-callback': (error: unknown) => {
             console.error('Turnstile error:', error);
             resolve(null);
           },
@@ -124,7 +124,7 @@ declare global {
       render: (element: string | Element, options: {
         sitekey: string;
         callback: (token: string) => void;
-        'error-callback'?: (error: any) => void;
+        'error-callback'?: (error: unknown) => void;
         theme?: 'light' | 'dark' | 'auto';
         size?: 'normal' | 'compact';
       }) => string;

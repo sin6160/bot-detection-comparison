@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import { useTurnstile } from './TurnstileProvider';
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
 
 interface TurnstileWidgetProps {
   onSuccess?: (token: string) => void;
-  onError?: (error: any) => void;
+  onError?: (error: unknown) => void;
   theme?: 'light' | 'dark' | 'auto';
   size?: 'normal' | 'compact';
 }
@@ -22,6 +22,22 @@ export default function TurnstileWidget({
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
 
+  // コールバック関数をメモ化
+  const handleSuccess = useCallback((token: string) => {
+    console.log('Turnstile widget success:', token);
+    setTurnstileToken(token);
+    if (onSuccess) {
+      onSuccess(token);
+    }
+  }, [onSuccess, setTurnstileToken]);
+
+  const handleError = useCallback((error: unknown) => {
+    console.error('Turnstile widget error:', error);
+    if (onError) {
+      onError(error);
+    }
+  }, [onError]);
+
   useEffect(() => {
     if (!isTurnstileLoaded || !window.turnstile || !TURNSTILE_SITE_KEY || !containerRef.current) {
       return;
@@ -31,6 +47,7 @@ export default function TurnstileWidget({
     if (widgetIdRef.current) {
       try {
         window.turnstile.remove(widgetIdRef.current);
+        widgetIdRef.current = null;
       } catch (error) {
         console.warn('Failed to remove existing Turnstile widget:', error);
       }
@@ -39,19 +56,8 @@ export default function TurnstileWidget({
     try {
       const widgetId = window.turnstile.render(containerRef.current, {
         sitekey: TURNSTILE_SITE_KEY,
-        callback: (token: string) => {
-          console.log('Turnstile widget success:', token);
-          setTurnstileToken(token);
-          if (onSuccess) {
-            onSuccess(token);
-          }
-        },
-        'error-callback': (error: any) => {
-          console.error('Turnstile widget error:', error);
-          if (onError) {
-            onError(error);
-          }
-        },
+        callback: handleSuccess,
+        'error-callback': handleError,
         theme,
         size
       });
@@ -60,9 +66,7 @@ export default function TurnstileWidget({
       console.log('Turnstile widget rendered with ID:', widgetId);
     } catch (error) {
       console.error('Turnstile widget render error:', error);
-      if (onError) {
-        onError(error);
-      }
+      handleError(error);
     }
 
     // クリーンアップ関数
@@ -70,12 +74,13 @@ export default function TurnstileWidget({
       if (widgetIdRef.current && window.turnstile) {
         try {
           window.turnstile.remove(widgetIdRef.current);
+          widgetIdRef.current = null;
         } catch (error) {
           console.warn('Failed to cleanup Turnstile widget:', error);
         }
       }
     };
-  }, [isTurnstileLoaded, onSuccess, onError, theme, size, setTurnstileToken]);
+  }, [isTurnstileLoaded, handleSuccess, handleError, theme, size]);
 
   if (!isTurnstileLoaded) {
     return (

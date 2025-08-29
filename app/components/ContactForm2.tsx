@@ -91,7 +91,7 @@ export default function ContactForm2() {
     console.log('Turnstile成功:', token);
   };
 
-  const handleTurnstileError = (error: any) => {
+  const handleTurnstileError = (error: unknown) => {
     console.error('Turnstileエラー:', error);
     setStatus({
       type: 'error',
