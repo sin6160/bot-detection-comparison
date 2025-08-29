@@ -37,9 +37,9 @@ export default function TurnstileWidget({
 
   // リセット機能をグローバルに公開（デバッグ用）
   useEffect(() => {
-    (window as any).resetTurnstile = resetWidget;
+    (window as Window & { resetTurnstile?: () => void }).resetTurnstile = resetWidget;
     return () => {
-      delete (window as any).resetTurnstile;
+      delete (window as Window & { resetTurnstile?: () => void }).resetTurnstile;
     };
   }, [resetWidget]);
 
@@ -94,7 +94,8 @@ export default function TurnstileWidget({
       widgetIdRef.current = null;
       isInitializedRef.current = false;
     };
-  }, [isTurnstileLoaded, theme, size]); // onSuccess, onError, setTurnstileTokenを依存関係から除外
+  }, [isTurnstileLoaded, theme, size]); // eslint-disable-line react-hooks/exhaustive-deps
+  // 意図的にonSuccess, onError, setTurnstileTokenを依存関係から除外してウィジェット再作成を防止
 
   if (!isTurnstileLoaded) {
     return (
