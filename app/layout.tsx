@@ -4,6 +4,7 @@ import "./globals.css";
 import RecaptchaProvider from "./components/RecaptchaProvider";
 import TurnstileProvider from "./components/TurnstileProvider";
 import BotScoreDisplay from "./components/BotScoreDisplay";
+import MouseCursorEffect from "./components/MouseCursorEffect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           <TurnstileProvider>
             {children}
             <BotScoreDisplay />
+            <MouseCursorEffect />
           </TurnstileProvider>
         </RecaptchaProvider>
         
