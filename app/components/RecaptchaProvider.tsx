@@ -87,30 +87,7 @@ export default function RecaptchaProvider({ children }: { children: React.ReactN
           return '';
         }
         const token = await recaptchaInstance.execute(RECAPTCHA_SITE_KEY, { action: 'submit' });
-        
-        // スコアを取得するためにバックエンドAPIを呼び出す
-        try {
-          console.log('reCAPTCHAスコア取得開始:', { token: token.substring(0, 20) + '...' });
-          const response = await fetch('/api/recaptcha', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ token, action: 'submit' }),
-          });
-          
-          const result = await response.json();
-          console.log('reCAPTCHA API レスポンス:', result);
-          
-          if (result.success && typeof result.score === 'number') {
-            console.log('reCAPTCHAスコア設定:', result.score);
-            setBotScore(result.score);
-          } else {
-            console.warn('reCAPTCHAスコア取得失敗:', result);
-          }
-        } catch (verifyError) {
-          console.error('reCAPTCHAスコア検証エラー:', verifyError);
-        }
+        console.log('reCAPTCHAトークン生成完了:', { token: token.substring(0, 20) + '...' });
         
         return token;
       } else {
